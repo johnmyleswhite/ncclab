@@ -1,0 +1,36 @@
+
+/* 
+text/html; charset=UTF-8
+
+Copyright (c) 2008-2010 www.cssmenubuilder.com
+
+Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+files (the "Software"), to deal in the Software without
+restriction, including without limitation the rights to use,
+copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the
+Software is furnished to do so, subject to the following
+conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.
+*/
+
+.menu{margin:0 auto; padding:0; height:60px; width:100%; display:block; background:url("normal.png") repeat-x;}
+.menu li{padding:0; margin:0; list-style:none; display:inline;}
+.menu li a{float:left; padding-left:15px; display:block; color:rgb(255,255,255); text-decoration:none; font:14px KozGoPro-Light, Helvetica Neue Light, Helvetica, sans-serif; cursor:pointer; background:url("normal.png") 0px -30px no-repeat; outline:none;}
+.menu li a span{line-height:60px; float:left; display:block; padding-right:15px; background:url("normal.png") 100% -30px no-repeat;}
+.menu li a:hover{background:url("rollover.png"); color:rgb(255,255,255);}
+.menu li a:hover span{background:url("rollover.png");}
+.menu li a.active, .menu li a.active:hover{line-height:60px; font:14px KozGoPro-Light, Helvetica Neue Light, Helvetica, sans-serif; background:url("rollover.png"); color:rgb(255,255,255);}
+.menu li a.active span, .menu li a.active:hover span{background:url("rollover.png") 100% -90px no-repeat;}

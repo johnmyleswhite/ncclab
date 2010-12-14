@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>NCC Content Slider #3</title>
+<link rel="stylesheet" href="css/style.aw-showcase.css" />
+<script type="text/javascript" src="jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="jquery.aw-showcase.min.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function()
+{
+	$("#showcase").awShowcase(
+	{
+		width:					700,
+		height:					370,
+		auto:					false,
+		interval:				5000,
+		continuous:				false,
+		loading:				true,
+		tooltip_width:			200,
+		tooltip_icon_width:		32,
+		tooltip_icon_height:	32,
+		tooltip_offsetx:		18,
+		tooltip_offsety:		0,
+		arrows:					false,
+		buttons:				false,
+		btn_numbers:			true,
+		keybord_keys:			true,
+		mousetrace:				false,
+		pauseonover:			true,
+		transition:				'vslide', /* vslide/hslide/fade */
+		transition_speed:		500,
+		show_caption:			'onload', /* onload/onhover/show */
+		thumbnails:				true,
+		thumbnails_position:	'outside-last', /* outside-last/outside-first/inside-last/inside-first */
+		thumbnails_direction:	'horizontal', /* vertical/horizontal */
+		thumbnails_slidex:		0 /* 0 = auto / 1 = slide one thumbnail / 2 = slide two thumbnails / etc. */
+	});
+});
+
+</script>
+</head>
+<body>
+
+<div id="showcase" class="showcase">
+	<div>
+		<img src="researchtemp.jpg" alt="01" />
+		<div class="showcase-thumbnail">
+			<img src="publicationstemp.jpg" alt="01" width="140px" />
+			<div class="showcase-thumbnail-cover"></div>
+		</div>
+		<div class="showcase-caption">
+			<a href="/research"><h2>Research</h2></a>
+		</div>
+	</div>
+	<div>
+		<img src="peopletemp.jpg" alt="02" />
+		<div class="showcase-thumbnail">
+			<img src="publicationstemp.jpg" alt="01" width="140px" />
+			<div class="showcase-thumbnail-cover"></div>
+		</div>
+        <div class="showcase-caption">
+			<a href="/people"><h2>People</h2></a>
+		</div>
+        </div>
+	<div>
+		<img src="publicationstemp.jpg" alt="03" />
+		<div class="showcase-thumbnail">
+			<img src="publicationstemp.jpg" alt="01" width="140px" />
+			<div class="showcase-thumbnail-cover"></div>
+		</div>
+         <div class="showcase-caption">
+			<a href="/publications"><h2>Publications</h2></a>
+		</div>
+	</div>
+	<div>
+		<img src="interntemp.jpg" alt="03" />
+		<div class="showcase-thumbnail">
+			<img src="publicationstemp.jpg" alt="01" width="140px" />
+			<div class="showcase-thumbnail-cover"></div>
+	    </div>
+    	 <div class="showcase-caption">
+			<a href="/internships"><h2>Internships</h2></a>
+		</div>
+</div>
+
+</body>
+</html>
