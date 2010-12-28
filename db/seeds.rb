@@ -6,12 +6,14 @@
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Daley', :city => cities.first)
 
-people_data = File.open('people.csv') {|f| f.readlines()}
+people_data = File.open('people.tsv') {|f| f.readlines()}
 people_data.each do |row|
-  fields = row.chomp.split(/,/)
+  fields = row.chomp.split(/\t/)
   Person.create({:name => fields[0],
                  :image => "/images/people/" + fields[1],
-                 :position => fields[2]})
+                 :position => fields[2],
+                 :url => fields[3],
+                 :blurb => fields[4]})
 end
 
 publications_data = File.open('publications.tsv') {|f| f.readlines()}

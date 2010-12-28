@@ -1,6 +1,12 @@
 <div style="float: left;">
+  <h2 style="margin-top: 10px;">NCC Lab Alumni</h2>
+  
   <% @alumni.each do |alumnus| %>
-    <p><%= alumnus.name %></p>
+    <% if alumnus.url.nil? %>
+      <p style="margin-bottom: 10px;"><%= alumnus.name %></p>
+    <% else %>
+      <p style="margin-bottom: 10px;"><a href="<%= alumnus.url %>" style="color: gray;"><%= alumnus.name %></a></p>
+    <% end %>
   <% end%>
 </div>
 

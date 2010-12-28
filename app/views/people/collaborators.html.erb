@@ -1,6 +1,15 @@
 <div style="float: left;">
+  <h2 style="margin-top: 10px;">NCC Lab Collaborators</h2>
+  
   <% @collaborators.each do |collaborator| %>
-    <p><%= collaborator.name %></p>
+    <p style="margin-bottom: 10px;">
+      <% if collaborator.url.nil? %>
+        <%= collaborator.name %><br />
+      <% else %>
+        <a href="<%= collaborator.url %>" style="color: gray;"><%= collaborator.name %></a><br />
+      <% end %>
+      <%= collaborator.blurb %>
+    </p>
   <% end%>
 </div>
 
