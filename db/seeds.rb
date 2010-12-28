@@ -8,15 +8,15 @@
 
 people_data = File.open('people.csv') {|f| f.readlines()}
 people_data.each do |row|
-  fields = row.split(/,/)
+  fields = row.chomp.split(/,/)
   Person.create({:name => fields[0],
                  :image => "/images/people/" + fields[1],
-                 :role => fields[2]})
+                 :position => fields[2]})
 end
 
 publications_data = File.open('publications.tsv') {|f| f.readlines()}
 publications_data.each do |row|
-  fields = row.split(/\t/)
+  fields = row.chomp.split(/\t/)
   Publication.create({:authors => fields[0],
                       :year => fields[1],
                       :title => fields[2],

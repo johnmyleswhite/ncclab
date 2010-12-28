@@ -441,6 +441,8 @@
     margin-top: 22em;
     padding: 0;
 	width: 100%;
+	display: block;
+	float: left;
 }
 .footertext{
 	color: #584D4D;
@@ -489,7 +491,7 @@
   margin-bottom: 20px;
 }
 .peoplenav {
-  border-left: 15px solid black;
+  border-left: 8px solid black;
   font-size: 24px;
   list-style-type: none;
   padding-left: 10px;
@@ -505,4 +507,34 @@
 }
 .peoplesubnav li {
   padding-left: 30px;
+  list-style-type: none;
+}
+.publicationsheader {
+  border-bottom: 1px solid black;
+  padding-left: 8px;
+}
+.internshipsnav {
+  border-left: 8px solid black;
+  font-size: 24px;
+  list-style-type: none;
+  padding-left: 10px;
+}
+.internshipsnav a:hover {
+  text-decoration: none;
+  color:#CC6600;
+}
+.researchnav {
+  border-left: 8px solid black;
+  font-size: 24px;
+  list-style-type: none;
+  padding-left: 10px;
+}
+.researchnav a:hover {
+  text-decoration: none;
+  color:#CC6600;
+}
+.nav {
+  float: right;
+  width: 300px;
+  margin-top: 100px;
 }

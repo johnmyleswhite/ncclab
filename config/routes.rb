@@ -13,6 +13,23 @@ Ncclab::Application.routes.draw do
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
 
+  match 'research/models' => 'research#models'
+  match 'research/methods' => 'research#methods'
+
+  match 'people/directors' => 'people#directors'
+  match 'people/postdocs' => 'people#postdocs'
+  match 'people/students' => 'people#students'
+  match 'people/ras' => 'people#ras'
+  match 'people/alumni' => 'people#alumni'
+  match 'people/collaborators' => 'people#collaborators'
+
+  # Add a publications by year route.
+
+  match 'internships/about' => 'internships#about'
+  match 'internships/alumni' => 'internships#alumni'
+  match 'internships/apply' => 'internships#apply'
+  match 'internships/faq' => 'internships#faq'
+  
   resources :home
   resources :research
   resources :people

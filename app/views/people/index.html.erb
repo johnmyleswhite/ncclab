@@ -1,35 +1,38 @@
-<table class="peopletable">
-<% @people.each_with_index do |person, index| %>
-  <% if index.modulo(3) == 0 %>
-    <tr>
-	    <td>
-	      <div class="personbox">
-          <a href="/people/<%= person.id %>"><img src="<%= person.image %>" /></a>
-	        <!--<%= person.name %>-->
-	        <!--<%= person.role %>-->
-	      </div>
-	    </td>
-	<% elsif index.modulo(3) == 1 %>
-      <td>
-        <div class="personbox">
-          <a href="/people/<%= person.id %>"><img src="<%= person.image %>" /></a>
-	        <!--<%= person.name %>-->
-	        <!--<%= person.role %>-->
-        </div>
-      </td>
-	<% else %>
-      <td>
-        <div class="personbox">
-          <a href="/people/<%= person.id %>"><img src="<%= person.image %>" /></a>
-	        <!--<%= person.name %>-->
-	        <!--<%= person.role %>-->
-        </div>
-      </td>
-	  </tr>
-	<% end %>
-<% end %>
-</table>
-<div>
+<div style="float: left;">
+  <table class="peopletable">
+    <% @people.each_with_index do |person, index| %>
+      <% if index.modulo(3) == 0 %>
+        <tr>
+    	    <td>
+    	      <div class="personbox">
+              <a href="/people/<%= person.id %>"><img src="<%= person.image %>" /></a>
+    	        <!--<%= person.name %>-->
+    	        <!--<%= person.position %>-->
+    	      </div>
+    	    </td>
+    	<% elsif index.modulo(3) == 1 %>
+          <td>
+            <div class="personbox">
+              <a href="/people/<%= person.id %>"><img src="<%= person.image %>" /></a>
+    	        <!--<%= person.name %>-->
+    	        <!--<%= person.position %>-->
+            </div>
+          </td>
+    	<% else %>
+          <td>
+            <div class="personbox">
+              <a href="/people/<%= person.id %>"><img src="<%= person.image %>" /></a>
+    	        <!--<%= person.name %>-->
+    	        <!--<%= person.position %>-->
+            </div>
+          </td>
+    	  </tr>
+    	<% end %>
+    <% end %>
+  </table>
+</div>
+
+<div class="nav">
   <ul class="peoplenav">
     <li><a href="/people/">Current</a></li>
     <ul class="peoplesubnav">

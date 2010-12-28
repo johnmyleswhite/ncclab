@@ -1,9 +1,7 @@
 <div style="float: left;">
-  <ol>
-    <li><a href="/people/<%= @person.id %>"><img src="<%= @person.image %>" /></a></li>
-    <li><%= @person.name %></li>
-    <li><%= @person.position %></li>
-  </ol>
+  <% @ras.each do |ra| %>
+    <p><%= ra.name %></p>
+  <% end%>
 </div>
 
 <div class="nav">
