@@ -14,7 +14,11 @@ ActiveRecord::Schema.define(:version => 20101214202029) do
 
   create_table "people", :force => true do |t|
     t.string   "name"
-    t.string   "picture"
+    t.string   "image"
+    t.string   "email"
+    t.string   "url"
+    t.string   "affiliation"
+    t.string   "role"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

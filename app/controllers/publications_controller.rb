@@ -2,7 +2,7 @@ class PublicationsController < ApplicationController
   # GET /publications
   # GET /publications.xml
   def index
-    @publications = Publication.find(:all)
+    @years = Publication.find(:all).map {|p| p.year}.uniq
     
     respond_to do |format|
       format.html # index.html.erb

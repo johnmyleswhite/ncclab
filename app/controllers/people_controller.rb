@@ -9,4 +9,15 @@ class PeopleController < ApplicationController
       format.xml  { render :xml => nil }
     end
   end
+  
+  # GET /people/1
+  # GET /people/1.xml  
+  def show
+    @person = Person.find(params[:id])
+    
+    respond_to do |format|
+      format.html # show.html.erb
+      format.xml  { render :xml => nil }
+    end
+  end
 end

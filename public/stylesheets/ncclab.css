@@ -1,0 +1,508 @@
+@charset "UTF-8";
+.body {
+	font: 100% Arial, Helvetica, sans-serif;
+	background: #FFFFFF;
+	margin: 0; 
+	padding: 0;
+	text-align: left; 
+	color: #000000;
+	text-decoration: none;
+}
+.header {
+	background-color:#0A131A;
+	width: 100%;
+	margin: 0 auto;
+	text-align: right;
+	min-height: 12em;
+}
+.container, .bodycontainer, .footercontainer {
+	margin:0 auto;
+	min-height:100%;
+	width:960px;
+}
+.menucontainer {
+	margin-left: 50px;  
+	position: absolute; 
+	top: 61px; 
+	z-index: 1;
+}
+.menu{
+	margin:0 auto;
+	padding:0;
+	height:60px;
+	width:100%;
+	display:block;
+	float: left;
+}
+.menu li{
+	padding:0;
+	margin:0;
+	list-style:none;
+	display:inline;
+}
+.menu li a{
+	float:left;
+	padding-left:15px;
+	display:block;
+	color:rgb(255,255,255);
+	text-decoration:none;
+	font:14px KozGoPro-Light, sans-serif;
+	cursor:pointer;
+	outline:none;
+}
+.menu li a span{
+	line-height:60px;
+	float:left;
+	display:block;
+	padding-right:15px;
+}
+.menu li a:hover{
+	background:url("/images/rollover.png");
+	color:rgb(255,255,255);
+}
+.menu li a:hover span{
+	background:url("/images/rollover.png");
+}
+.menu li a.active, .menu li a.active:hover{
+	line-height:60px;
+	font:14px KozGoPro-Light, sans-serif;
+	background:url("/images/rollover.png");
+	color:rgb(255,255,255);
+}
+.menu li a.active span, .menu li a.active:hover span{
+	background:url("/images/rollover.png") 100% -90px no-repeat;
+}
+.menuChrome{
+	margin:0 auto;
+	padding:0;
+	height:60px;
+	width:100%;
+	display:block;
+	float: left;
+}
+.menuChrome li{
+	padding:0;
+	margin:0;
+	list-style:none;
+	display:inline;
+}
+.menuChrome li a{
+	float:left;
+	padding-left:15px;
+	display:block;
+	color:rgb(255,255,255);
+	text-decoration:none;
+	font:14px KozGoPro-Light, sans-serif;
+	cursor:pointer;
+	outline:none;
+}
+.menuChrome li a span{
+	line-height:60px;
+	float:left;
+	display:block;
+	padding-right:15px;
+}
+.menuChrome li a:hover{
+	background:url("/images/rollover.png");
+	color:rgb(255,255,255);
+}
+.menuChrome li a:hover span{
+	background:url("/images/rollover.png");
+}
+.menuChrome li a.active, .menu li a.active:hover{
+	line-height:60px;
+	font:14px KozGoPro-Light, sans-serif;
+	background:url("/images/rollover.png");
+	color:rgb(255,255,255);
+}
+.menuChrome li a.active span, .menu li a.active:hover span{
+	background:url("/images/rollover.png") 100% -90px no-repeat;
+}
+.menuFirefox{
+	margin:0 auto;
+	padding:0;
+	height:60px;
+	width:100%;
+	display:block;
+	float: left;
+}
+.menuFirefox li{
+	padding:0;
+	margin:0;
+	list-style:none;
+	display:inline;
+}
+.menuFirefox li a{
+	float:left;
+	padding-left:15px;
+	display:block;
+	color:rgb(255,255,255);
+	text-decoration:none;
+	font:14px Helvetica, sans-serif;
+	cursor:pointer;
+	outline:none;
+}
+.menuFirefox li a span{
+	line-height:60px;
+	float:left;
+	display:block;
+	padding-right:15px;
+}
+.menuFirefox li a:hover{
+	background:url("/images/rollover.png");
+	color:rgb(255,255,255);
+}
+.menuFirefox li a:hover span{
+	background:url("/images/rollover.png");
+}
+.menuFirefox li a.active, .menu li a.active:hover{
+	line-height:60px;
+	font:14px Helvetica, sans-serif;
+	background:url("/images/rollover.png");
+	color:rgb(255,255,255);
+}
+.menuFirefox li a.active span, .menu li a.active:hover span{
+	background:url("/images/rollover.png") 100% -90px no-repeat;
+}
+.menuOpera{
+	margin:0 auto;
+	padding:0;
+	height:60px;
+	width:100%;
+	display:block;
+	float: left;
+}
+.menuOpera li{
+	padding:0;
+	margin:0;
+	list-style:none;
+	display:inline;
+}
+.menuOpera li a{
+	float:left;
+	padding-left:15px;
+	display:block;
+	color:rgb(255,255,255);
+	text-decoration:none;
+	font:14px Helvetica Neue Light, sans-serif;
+	cursor:pointer;
+	outline:none;
+}
+.menuOpera li a span{
+	line-height:60px;
+	float:left;
+	display:block;
+	padding-right:15px;
+}
+.menuOpera li a:hover{
+	background:url("/images/rollover.png");
+	color:rgb(255,255,255);
+}
+.menuOpera li a:hover span{
+	background:url("/images/rollover.png");
+}
+.menuOpera li a.active, .menuOpera li a.active:hover{
+	line-height:60px;
+	font:14px Helvetica Neue Light, sans-serif;
+	background:url("/images/rollover.png");
+	color:rgb(255,255,255);
+}
+.menuOpera li a.active span, .menuOpera li a.active:hover span{
+	background:url("/images/rollover.png") 100% -90px no-repeat;
+}
+.menuSafari{
+	margin:0 auto;
+	padding:0;
+	height:60px;
+	width:100%;
+	display:block;
+	float: left;
+}
+.menuSafari li{
+	padding:0;
+	margin:0;
+	list-style:none;
+	display:inline;
+}
+.menuSafari li a{
+	float:left;
+	padding-left:15px;
+	display:block;
+	color:rgb(255,255,255);
+	text-decoration:none;
+	font:14px KozGoPro-Light, sans-serif;
+	cursor:pointer;
+	outline:none;
+}
+.menuSafari li a span{
+	line-height:60px;
+	float:left;
+	display:block;
+	padding-right:15px;
+}
+.menuSafari li a:hover{
+	background:url("/images/rollover.png");
+	color:rgb(255,255,255);
+}
+.menuSafari li a:hover span{
+	background:url("/images/rollover.png");
+}
+.menuSafari li a.active, .menuSafari li a.active:hover{
+	line-height:60px;
+	font:14px KozGoPro-Light, sans-serif;
+	background:url("/images/rollover.png");
+	color:rgb(255,255,255);
+}
+.menuSafari li a.active span, .menuSafari li a.active:hover span {
+	background:url("/images/rollover.png") 100% -90px no-repeat;
+}
+.title{
+	text-align: right;
+	font:4.65em KozGoPro-Light, sans-serif;
+	color: #FFFFFF;
+	position: relative;
+	top: 20px;
+	right: 40px;
+	height: 236px;
+}
+.title:hover{
+	text-align: right;
+	font:4.65em KozGoPro-Light, sans-serif;
+	color: #FFFFFF;
+	position: relative;
+	top: 20px;
+	right: 40px;
+	height: 236px;
+	text-decoration: none;
+}
+.subtitle{
+	font: .87em KozGoPro-Light, sans-serif;
+	color: #FFFFFF;
+	position: relative;
+	bottom: 25px;
+	text-align: right;
+	right: 42px;
+}
+.titleChrome {
+	text-align: right;
+	font:4.65em KozGoPro-Light, sans-serif;
+	color: #FFFFFF;
+	position: relative;
+	top: 20px;
+	right: 40px;
+	height: 236px;
+}
+.titleChrome:hover {
+	text-align: right;
+	font:4.65em KozGoPro-Light, sans-serif;
+	color: #FFFFFF;
+	position: relative;
+	top: 20px;
+	right: 40px;
+	height: 236px;
+	text-decoration: none;
+}
+.subtitleChrome{
+	font: .87em KozGoPro-Light, sans-serif;
+	color: #FFFFFF;
+	position: relative;
+	bottom: 25px;
+	text-align: right;
+	right: 42px;
+}
+.titleExplorer {
+	text-align: right;
+	font:4.65em Arial, sans-serif;
+	color: #FFFFFF;
+	position: relative;
+	top: 50px;
+	height: 236px;
+}
+.titleExplorer:hover {
+	text-align: right;
+	font:4.65em Arial, sans-serif;
+	color: #FFFFFF;
+	position: relative;
+	top: 50px;
+	height: 236px;
+	text-decoration: none;
+}
+.subtitleExplorer{
+	font: .87em Arial, sans-serif;
+	color: #FFFFFF;
+	position: relative;
+	top: 40px;
+	text-align: right;
+	right: 10px;
+}
+.titleFirefox {
+	text-align: right;
+	font:4.65em Helvetica, sans-serif;
+	color: #FFFFFF;
+	position: relative;
+	top: 50px;
+	height: 236px;
+}
+.titleFirefox:hover {
+	text-align: right;
+	font:4.65em Helvetica, sans-serif;
+	color: #FFFFFF;
+	position: relative;
+	top: 50px;
+	height: 236px;
+	text-decoration: none;
+}
+.subtitleFirefox{
+	font: .95em KozGoPro-Light, Helvetica Neue Light, Helvetica, sans-serif;
+	color: #FFFFFF;
+	position: relative;
+	top: 40px;
+	text-align: right;
+	right: 10px;
+}
+.titleOpera {
+	text-align: right;
+	font:4.65em Helvetica Neue Light, sans-serif;
+	color: #FFFFFF;
+	position: relative;
+	top: 45px;
+	height: 236px;
+}
+.titleOpera:hover {
+	text-align: right;
+	font:4.65em Helvetica Neue Light, sans-serif;
+	color: #FFFFFF;
+	position: relative;
+	top: 45px;
+	height: 236px;
+	text-decoration: none;
+}
+.subtitleOpera{
+	font: .97em Helvetica Neue Light, Helvetica, sans-serif;
+	color: #FFFFFF;
+	position: relative;
+	top: 35px;
+	text-align: right;
+	left: 2px;
+}
+.titleSafari {
+	text-align: right;
+	font:4.65em KozGoPro-Light, sans-serif;
+	color: #FFFFFF;
+	position: relative;
+	top: 20px;
+	right: 40px;
+	height: 236px;
+}
+.titleSafari:hover {
+	text-align: right;
+	font:4.65em KozGoPro-Light, sans-serif;
+	color: #FFFFFF;
+	position: relative;
+	top: 20px;
+	height: 236px;
+	text-decoration: none;
+}
+.subtitleSafari{
+	font: .87em KozGoPro-Light, sans-serif;
+	color: #FFFFFF;
+	position: relative;
+	bottom: 25px;
+	text-align: right;
+	right: 42px;
+}
+.slider{
+	height: 421px;
+	width: 719px;
+	position: relative;
+	top: 100px;
+	left: 120.5px;
+}
+.welcome{
+	text-align:left;
+	font: 3em Helvetica Neue Light, Helvetica, sans-serif;
+	color: #584D4D;
+	width:620px;
+	position: relative;
+	top: 30px;
+	left: 60px;
+}
+.info{
+	text-align: left;
+	font: 1em Arial, Arial, Helvetica, sans-serif;
+	color: #584D4D;
+	width: 620px;
+	height: 152px;
+	position: relative;
+	top: 30px;
+	left: 60px;
+}
+.footer{
+    margin-top: 22em;
+    padding: 0;
+	width: 100%;
+}
+.footertext{
+	color: #584D4D;
+}
+.footerlink{
+	color: #584D4D;
+	font: 1em Arial, Helvetica, sans-serif;
+}
+.footerlink:hover{
+	color:#CC6600;
+	font: 1em Arial, Helvetica, sans-serif;
+	text-decoration: none
+}
+.personbox {
+  height: 271px;
+  width: 145px;
+  margin: 10px;
+}
+.personbox:hover {
+  background-color: blue;
+  height: 281px;
+  width: 155px;
+}
+.publication {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 3px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-left: 1px dotted black;
+}
+.publication a {
+  color:#CC6600;
+}
+.bodycontent {
+  text-align: left;
+  width: 600px;
+  margin-left: 200px;
+}
+.research
+{
+  margin-bottom: 20px;
+}
+.internships
+{
+  margin-bottom: 20px;
+}
+.peoplenav {
+  border-left: 15px solid black;
+  font-size: 24px;
+  list-style-type: none;
+  padding-left: 10px;
+}
+.peoplenav a:hover {
+  text-decoration: none;
+  color:#CC6600;
+}
+.peoplesubnav a {
+  font-size: 20px;
+  list-style-type: none;
+  color: gray;
+}
+.peoplesubnav li {
+  padding-left: 30px;
+}

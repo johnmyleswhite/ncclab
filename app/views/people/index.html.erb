@@ -1,9 +1,44 @@
-<div id="id2" style="height: 152px; left: 90px; position: absolute; top: 790px; width: 620px; z-index: 1; " class="style_SkipStroke_1 shape-with-text">
-  <div class="text-content style_External_620_152" style="padding: 0px; ">
-    <div class="style_1">
-			<% @people.each do |person| %>
-      	<p style="padding-top: 0pt;" class="paragraph_style_1"><%= person[:name] %></p>
-			<% end %>
-    </div>
-  </div>
+<table class="peopletable">
+<% @people.each_with_index do |person, index| %>
+  <% if index.modulo(3) == 0 %>
+    <tr>
+	    <td>
+	      <div class="personbox">
+          <a href="/people/<%= person.id %>"><img src="<%= person.image %>" /></a>
+	        <!--<%= person.name %>-->
+	        <!--<%= person.role %>-->
+	      </div>
+	    </td>
+	<% elsif index.modulo(3) == 1 %>
+      <td>
+        <div class="personbox">
+          <a href="/people/<%= person.id %>"><img src="<%= person.image %>" /></a>
+	        <!--<%= person.name %>-->
+	        <!--<%= person.role %>-->
+        </div>
+      </td>
+	<% else %>
+      <td>
+        <div class="personbox">
+          <a href="/people/<%= person.id %>"><img src="<%= person.image %>" /></a>
+	        <!--<%= person.name %>-->
+	        <!--<%= person.role %>-->
+        </div>
+      </td>
+	  </tr>
+	<% end %>
+<% end %>
+</table>
+<div>
+  <ul class="peoplenav">
+    <li><a href="/people/">Current</a></li>
+    <ul class="peoplesubnav">
+      <li><a href="/people/directors">Directors</a></li>
+      <li><a href="/people/postdocs">Postdoctoral Fellows</a></li>
+      <li><a href="/people/students">Graduate Students</a></li>
+      <li><a href="/people/ras">Research Associates</a></li>
+    </ul>
+    <li><a href="/people/alumni">Alumni</a></li>
+    <li><a href="/people/collaborators">Collaborators</a></li>
+  </ul>
 </div>
