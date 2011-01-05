@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(:version => 20101214202029) do
     t.string   "phone"
     t.string   "blurb"
     t.string   "image"
+    t.string   "image2"
     t.string   "url"
     t.string   "position"
     t.datetime "created_at"

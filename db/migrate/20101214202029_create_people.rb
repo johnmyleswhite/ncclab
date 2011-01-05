@@ -8,6 +8,7 @@ class CreatePeople < ActiveRecord::Migration
       t.string :phone
       t.string :blurb
       t.string :image
+      t.string :image2
       t.string :url
       t.string :position
       t.timestamps
