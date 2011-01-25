@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Neuroscience of Cognitive Control Laboratory</title>
+		<link rel="stylesheet" type="text/css" href="/stylesheets/ncclab.css"/>
+		<link rel="stylesheet" type="text/css" href="/stylesheets/style.aw-showcase.css" />
+		<script type="text/javascript" src="/javascripts/jquery-1.4.2.min.js"></script>
+		<script type="text/javascript" src="/javascripts/jquery.aw-showcase.min.js"></script>
+		<script type="text/javascript" src="/javascripts/browserdetect.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function()
+{
+	$("#showcase").awShowcase(
+	{
+		width:					700,
+		height:					370,
+		auto:					false,
+		interval:				5000,
+		continuous:				false,
+		loading:				true,
+		arrows:					false,
+		buttons:				false,
+		btn_numbers:			true,
+		keybord_keys:			true,
+		mousetrace:				false,
+		pauseonover:			true,
+		transition:				'vslide', 
+		transition_speed:		500,
+		show_caption:			'onload', 
+		thumbnails:				true,
+		thumbnails_position:	'outside-last', 
+		thumbnails_direction:	'horizontal', 
+		thumbnails_slidex:		0 
+	});
+});
+</script>
+	</head>
+
+	<body onload="classDetect();" class="body">
+		<div class="header">
+			<div class="container">
+    		<div class="menucontainer">
+        	<ul class="menu" id="menu">
+		  			<li>
+							<a href="/research"><span>RESEARCH</span></a>
+						</li>
+		  			<li>
+							<a href="/people"><span>PEOPLE</span></a>
+						</li>
+		  			<li>
+							<a href="/publications"><span>PUBLICATIONS</span></a>
+						</li>
+		  			<li>
+							<a href="/internships"><span>INTERNSHIPS</span></a>
+						</li>
+		  			<li>
+							<a href="/contact"  ><span>CONTACT</span></a>
+						</li>
+					</ul>
+    		</div>
+	  		<a href="/home" class="title" id="title">NCC LAB</a><br />
+    		<span class="subtitle" id="subtitle">Neuroscience of Cognitive Control Laboratory</span>
+			</div>
+		</div>
+		<div class="bodycontainer">
+      <%= yield %>
+    </div>
+  </div>
+
+  <div class="footer">
+	  <div class="footercontainer">
+		  <div align="center" class="footertext">
+        <a href="http://www.princeton.edu/main/" class="footerlink">Princeton University</a> |
+        <a href="http://www.princeton.edu/neuroscience/" class="footerlink">Princeton Neuroscience Institute</a> |
+        <a href="https://weblamp.princeton.edu/~psych/psychology/home/index.php" class="footerlink">Department of Psychology</a>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>

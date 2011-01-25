@@ -1,19 +1,37 @@
-<div style="float: left;">
+<div style="padding-left: 80px; padding-top: 50px;">
+  <h1>RESEARCH ASSOCIATES</h1>
   <% @ras.each do |ra| %>
-    <p><%= ra.name %></p>
+   <div class="positionpage">
+    <div class="personimage">
+     <img src="<%= ra.image2 %>" />
+    </div>
+    <div class="personinfo">
+     <% if ra.url.nil? %>
+      <a class="personname" style="text-decoration: none; cursor: text;" href="<%= ra.url %>" name="<%= ra.name %>"><%= ra.name %></a><br /><%= ra.title %><br /><%= ra.institution %><br />
+      <%= ra.office %><br /><%= ra.email %><br /><%= ra.phone %><br />
+      <br/>
+      <%= ra.blurb %>
+     <% else %>
+      <a class="personname" href="<%= ra.url %>" name="<%= ra.name %>"><%= ra.name %></a><br /><%= ra.title %><br /><%= ra.institution %><br />
+      <%= ra.office %><br /><%= ra.email %><br /><%= ra.phone %><br />
+      <br/>
+      <%= ra.blurb %>
+      <% end %>
+    </div>
+   </div>
   <% end%>
 </div>
 
 <div class="nav">
   <ul class="peoplenav">
-    <li><a href="/people/">Current</a></li>
+    <li><a href="/people/">CURRENT</a></li>
     <ul class="peoplesubnav">
       <li><a href="/people/directors">Directors</a></li>
       <li><a href="/people/postdocs">Postdoctoral Fellows</a></li>
       <li><a href="/people/students">Graduate Students</a></li>
       <li><a href="/people/ras">Research Associates</a></li>
     </ul>
-    <li><a href="/people/alumni">Alumni</a></li>
-    <li><a href="/people/collaborators">Collaborators</a></li>
+    <li><a href="/people/alumni">ALUMNI</a></li>
+    <li><a href="/people/collaborators">COLLABORATORS</a></li>
   </ul>
 </div>

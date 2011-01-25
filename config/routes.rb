@@ -25,16 +25,17 @@ Ncclab::Application.routes.draw do
 
   # Add a publications by year route.
 
-  match 'internships/about' => 'internships#about'
-  match 'internships/alumni' => 'internships#alumni'
-  match 'internships/apply' => 'internships#apply'
-  match 'internships/faq' => 'internships#faq'
+  match 'positions/internships' => 'positions#internships'
+  match 'positions/about' => 'positions#about'
+  match 'positions/alumni' => 'positions#alumni'
+  match 'positions/apply' => 'positions#apply'
+  match 'positions/faq' => 'positions#faq'
   
   resources :home
   resources :research
   resources :people
   resources :publications
-  resources :internships
+  resources :positions
   resources :contact
 
   # Sample resource route with options:

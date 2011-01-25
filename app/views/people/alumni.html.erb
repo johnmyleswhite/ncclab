@@ -1,25 +1,29 @@
-<div style="float: left;">
-  <h2 style="margin-top: 10px;">NCC Lab Alumni</h2>
+<div style="position: relative; width: 620px;">
+  <h1 style="padding-left: 80px; padding-top: 50px;">NCC LAB ALUMNI</h1>
   
   <% @alumni.each do |alumnus| %>
-    <% if alumnus.url.nil? %>
-      <p style="margin-bottom: 10px;"><%= alumnus.name %></p>
-    <% else %>
-      <p style="margin-bottom: 10px;"><a href="<%= alumnus.url %>" style="color: gray;"><%= alumnus.name %></a></p>
-    <% end %>
+   <div>
+     <% if alumnus.url.nil? %>
+      <p style="padding-top: 10px; color: #322B2B"><a class="tooltip" style="font-weight: bold; text-decoration: none; cursor: text;" rel="#"><%= alumnus.name %><span class="classic"><b><%= alumnus.title %></b><br /><%= alumnus.office %><br /><%= alumnus.email %><br /><b><%= alumnus.phone %></b><br /><%= alumnus.blurb %><br /><%= alumnus.image %></span></a><br /><%= alumnus.image %></p>
+     <% else %>
+      <p style="padding-top: 10px; color: #322B2B"><a class="tooltip" style="font-weight: bold;" href="<%= alumnus.url %>" rel="#"><%= alumnus.name %><span class="classic"><b><%= alumnus.title %></b><br /><%= alumnus.office %><br /><%= alumnus.email %><br /><b><%= alumnus.phone %></b><br /><%= alumnus.blurb %><br /><%= alumnus.image %></span></a><br /><%= alumnus.image %></p>
+  	 <% end%>
+   </div>
   <% end%>
 </div>
+<div style="padding-bottom: 25px;">
+</div>
 
-<div class="nav">
+<div class="nav" style="margin-top: -21px;">
   <ul class="peoplenav">
-    <li><a href="/people/">Current</a></li>
+    <li><a href="/people/">CURRENT</a></li>
     <ul class="peoplesubnav">
       <li><a href="/people/directors">Directors</a></li>
       <li><a href="/people/postdocs">Postdoctoral Fellows</a></li>
       <li><a href="/people/students">Graduate Students</a></li>
       <li><a href="/people/ras">Research Associates</a></li>
     </ul>
-    <li><a href="/people/alumni">Alumni</a></li>
-    <li><a href="/people/collaborators">Collaborators</a></li>
-  </ul>
+    <li><a href="/people/alumni">ALUMNI</a></li>
+    <li><a href="/people/collaborators">COLLABORATORS</a></li>
+    </ul>
 </div>

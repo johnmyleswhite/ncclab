@@ -1,0 +1,19 @@
+<div style="float: left;">
+  <% @students.each do |student| %>
+    <p><%= student.name %></p>
+  <% end%>
+</div>
+
+<div class="nav">
+  <ul class="peoplenav">
+    <li><a href="/people/">Current</a></li>
+    <ul class="peoplesubnav">
+      <li><a href="/people/directors">Directors</a></li>
+      <li><a href="/people/postdocs">Postdoctoral Fellows</a></li>
+      <li><a href="/people/students">Graduate Students</a></li>
+      <li><a href="/people/ras">Research Associates</a></li>
+    </ul>
+    <li><a href="/people/alumni">Alumni</a></li>
+    <li><a href="/people/collaborators">Collaborators</a></li>
+  </ul>
+</div>

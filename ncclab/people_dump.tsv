@@ -1,0 +1,61 @@
+name	title	office	email	phone	blurb	image	url	position
+Jonathan Cohen						/images/people/jon.jpg		Director
+Leigh Nystrom						/images/people/leigh.jpg		Co-Director
+Patrick Simen						/images/people/pat.jpg		Postdoctoral Fellow
+Brent Field						/images/people/brent.jpg		Postdoctoral Fellow
+Damon Tomlin						/images/people/damon.jpg		Postdoctoral Fellow
+Fuat Balci						/images/people/fuat.jpg		Postdoctoral Fellow
+Marieke van Vugt						/images/people/marieke.jpg		Postdoctoral Fellow
+Robert Wilson						/images/people/bob.jpg		Graduate Student
+Michael Todd						/images/people/mike.jpg		Graduate Student
+Adam Moore						/images/people/adam.jpg		Graduate Student
+John Myles White						/images/people/john.jpg		Graduate Student
+Sarah Getz						/images/people/sarah.jpg		Graduate Student
+Laura deSouza						/images/people/laura.jpg		Research Assistant
+Peter Foster						/images/people/pete.jpg		Research Assistant
+Deanna Barch						/images/people/	http://ccpweb.wustl.edu/barch.html	Alumnus
+Greg Berns						/images/people/	http://www.ccnl.emory.edu/greg/	Alumnus
+Rafal Bogacz						/images/people/	http://www.cs.bris.ac.uk/~rafal/	Alumnus
+Matthew Botvinick						/images/people/	http://www.princeton.edu/~matthewb/	Alumnus
+Todd Braver						/images/people/	http://ccpweb.wustl.edu/braver.html	Alumnus
+Jason Chein						/images/people/	http://www.temple.edu/psychology/chein/	Alumnus
+Raymond Cho						/images/people/	http://ccn.lrdc.pitt.edu/node/22	Alumnus
+Kim D'Ardenne						/images/people/	http://www.hnl.bcm.tmc.edu/fellows.html	Alumnus
+Gesine Dreisbach						/images/people/	http://www-cgi.uni-regensburg.de/Fakultaeten/Psychologie/Zimmer/Mitarbeiter/gesine-dreisbach	Alumnus
+Ben Eppinger						/images/people/	http://www.mpib-berlin.mpg.de/en/forschung/lip/projekte/neuromodulation-cognition.htm	Alumnus
+Steve Forman						/images/people/		Alumnus
+Mark Gilzenrat						/images/people/		Alumnus
+Randy Gobbel						/images/people/		Alumnus
+Joshua Greene						/images/people/	http://www.wjh.harvard.edu/~jgreene/	Alumnus
+Clay Holroyd						/images/people/	http://web.uvic.ca/psyc/people/faculty/holroyd.php	Alumnus
+Therese Huston						/images/people/	http://theresehuston.com/	Alumnus
+James Kroger						/images/people/	http://www-psych.nmsu.edu/~jkroger/lab/krogerpage.html	Alumnus
+Agatha Lenartowicz						/images/people/	http://alenarto.bol.ucla.edu/	Alumnus
+Samuel McClure						/images/people/	http://www-psych.stanford.edu/~smcclure/	Alumnus
+Sander Nieuwenhuis						/images/people/	http://www.socialsciences.leiden.edu/psychology/organisation/staff/nieuwenhuis.html	Alumnus
+Yael Niv						/images/people/	http://www.princeton.edu/~yael/	Alumnus
+William Perlstein						/images/people/	http://neuropsy.phhp.ufl.edu/facres/facprofiles/Perlstein.html	Alumnus
+Jean-Baptiste Pochon						/images/people/		Alumnus
+Sean Polyn						/images/people/	http://polyn.com/	Alumnus
+James Rilling						/images/people/	http://www.anthropology.emory.edu/FACULTY/Rilling/ANTJR/index.html	Alumnus
+Alan Sanfey						/images/people/	http://www.u.arizona.edu/~asanfey/home.html	Alumnus
+Aaron Schurger						/images/people/	http://www.unicog.org/main/pages.php?page=People	Alumnus
+Marius Usher						/images/people/	http://www.bbk.ac.uk/psyc/staff/academic/musher	Alumnus
+Nick Yeung						/images/people/	http://www.univ.ox.ac.uk/whos_who/academic_staff/fellows_1/nick_yeung/	Alumnus
+Angela Yu						/images/people/	http://www.cogsci.ucsd.edu/~ajyu/	Alumnus
+Gary Aston-Jones					The role of the brainstem in neuromodulatory systems of attention, affect and motivation	/images/people/	http://neurosciences.musc.edu/faculty/full_time/aston.html	Collaborator
+Matt Botvinick					Cognitive control and sequential action	/images/people/	http://www.princeton.edu/~matthewb/	Collaborator
+Todd Braver					Cognitive control and psychopathology	/images/people/	http://ccpweb.wustl.edu/braver.html	Collaborator
+Cameron Carter					Neural mechanisms of attention, working memory, and cognitive control in schizophrenia	/images/people/	http://ucdirc.ucdavis.edu/people/carter.php	Collaborator
+Andy Conway					Individual differences in working memory and cognitive control	/images/people/	http://weblamp.princeton.edu/~psych/psychology/research/conway/index.php	Collaborator
+Josh Gold					Decision making in nonhuman primates	/images/people/	http://www.med.upenn.edu/ins/faculty/joshgold.htm	Collaborator
+Phil Holmes					Mathematical modeling	/images/people/	http://www.princeton.edu/mae/people/faculty/holmes/	Collaborator
+David Laibson					Behavioral economics	/images/people/	http://www.economics.harvard.edu/faculty/laibson	Collaborator
+Jay McClelland					PDP models of learning and decision making	/images/people/	http://www-psych.stanford.edu/~jlm/	Collaborator
+Sam McClure					Decision making and neuroeconomics	/images/people/	http://www-psych.stanford.edu/~smcclure/	Collaborator
+Read Montague					Neuroeconomics	/images/people/	http://www.hnl.bcm.tmc.edu/faculty.html	Collaborator
+Bill Newsome					Decision making in nonhuman primates	/images/people/	http://monkeybiz.stanford.edu/	Collaborator
+Yael Niv					Reinforcement learning and decision making	/images/people/	http://www.princeton.edu/~yael/	Collaborator
+Ken Norman					Neural bases of episodic memory	/images/people/	http://compmem.princeton.edu/?n=Main.HomePage	Collaborator
+Randy O'Reilly					Computational models of the biological bases of cognition	/images/people/	http://psych.colorado.edu/~oreilly/	Collaborator
+Nick Yeung						/images/people/	http://www.univ.ox.ac.uk/whos_who/academic_staff/fellows_1/nick_yeung/ Attention and cognitive control	Collaborator

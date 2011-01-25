@@ -1,0 +1,18 @@
+<div style="float: left; width: 500px; margin-left: 200px;">
+  <% @years.each do |year| %>
+    <% if year.nil? %>
+      <h2 class="publicationsheader">In Press</h2>
+    <% else %>
+      <h2 class="publicationsheader"><%= year %></h2>
+    <% end %>
+    <% Publication.find_all_by_year(year).each do |publication| %>
+      <p class="publication">
+        <%= publication.authors %>
+        (<%= publication.year_string %>)<br />
+        <b><%= publication.title %></b><br />
+        <%= publication.journal %>
+        [<a href="<%= publication.file %>">PDF</a>]
+      </p>
+    <% end %>
+  <% end %>
+</div>

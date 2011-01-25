@@ -1,9 +1,11 @@
-<div style="float: left; width: 500px; margin-left: 200px;">
+<div>
+  <h1 style="padding-top: 50px; padding-left: 80px;">NCC LAB PUBLICATIONS</h1>
+  <div style="width: 800px; padding-left: 80px;">
   <% @years.each do |year| %>
     <% if year.nil? %>
-      <h2 class="publicationsheader">In Press</h2>
+      <h3>In Press</h3>
     <% else %>
-      <h2 class="publicationsheader"><%= year %></h2>
+      <h3><%= year %></h3>
     <% end %>
     <% Publication.find_all_by_year(year).each do |publication| %>
       <p class="publication">
@@ -15,4 +17,5 @@
       </p>
     <% end %>
   <% end %>
+  </div>
 </div>

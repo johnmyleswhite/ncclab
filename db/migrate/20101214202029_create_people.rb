@@ -11,6 +11,7 @@ class CreatePeople < ActiveRecord::Migration
       t.string :image2
       t.string :url
       t.string :position
+      t.string :institution
       t.timestamps
     end
   end

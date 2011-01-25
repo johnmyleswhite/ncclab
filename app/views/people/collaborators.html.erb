@@ -1,28 +1,29 @@
-<div style="float: left;">
-  <h2 style="margin-top: 10px;">NCC Lab Collaborators</h2>
+<div class="collaboratorsbox">
+  <h1 style="padding-left: 80px; padding-top: 50px;">NCC LAB COLLABORATORS</h1>
   
   <% @collaborators.each do |collaborator| %>
-    <p style="margin-bottom: 10px;">
+    <p style="margin-top: 10px; margin-left: 80px; margin-bottom: 10px;">
       <% if collaborator.url.nil? %>
         <%= collaborator.name %><br />
       <% else %>
-        <a href="<%= collaborator.url %>" style="color: gray;"><%= collaborator.name %></a><br />
+        <a href="<%= collaborator.url %>" style="color: #322B2B; font-weight: bold;"><%= collaborator.name %></a><br />
       <% end %>
-      <%= collaborator.blurb %>
+      <span style="color: #322B2B; width: 550px;"><%= collaborator.institution %></span><br />
+      <span style="color: #322B2B; width: 550px;"><%= collaborator.blurb %></span>
     </p>
   <% end%>
 </div>
 
-<div class="nav">
+<div class="nav" style="margin-top: -21px;">
   <ul class="peoplenav">
-    <li><a href="/people/">Current</a></li>
+    <li><a href="/people/">CURRENT</a></li>
     <ul class="peoplesubnav">
       <li><a href="/people/directors">Directors</a></li>
       <li><a href="/people/postdocs">Postdoctoral Fellows</a></li>
       <li><a href="/people/students">Graduate Students</a></li>
       <li><a href="/people/ras">Research Associates</a></li>
     </ul>
-    <li><a href="/people/alumni">Alumni</a></li>
-    <li><a href="/people/collaborators">Collaborators</a></li>
+    <li><a href="/people/alumni">ALUMNI</a></li>
+    <li><a href="/people/collaborators">COLLABORATORS</a></li>
   </ul>
 </div>

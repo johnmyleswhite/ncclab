@@ -1,35 +1,80 @@
 @charset "UTF-8";
-.body {
-	font: 100% Arial, Helvetica, sans-serif;
-	background: #FFFFFF;
+
+html, body {
+	height: 100%;
+	font: 100% Arial, sans-serif;
+	background: none repeat scroll 0 0 #F1F1F1;
 	margin: 0; 
 	padding: 0;
 	text-align: left; 
-	color: #000000;
+	color: #584D4D;
 	text-decoration: none;
 }
+h1  {
+	font: 200% Arial, sans-serif;
+	font-weight: bold;
+	color: #322B2B;
+	margin-bottom: 20px;
+}
+h2 {
+	font: 150% Arial, sans-serif;
+	font-weight: bold;
+	color: #322B2B;
+	padding-left: 80px
+}
+h3 {
+	font: 125% Arial, sans-serif;
+	font-weight: bold;
+	color: #584D4D;
+	margin-bottom: -10px;
+}
+a {
+    color: #322B2B;
+    text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+p {
+	font: 100% Arial, sans-serif;
+	color: #584D4D;
+	margin-left: 80px;
+	margin-top: -15px;
+}
+.wrap { 
+	width: 960px;
+	margin: 0 auto;
+	min-height: 100%;
+	background: none repeat scroll 0 0 #F1F1F1;
+}
 .header {
-	background-color:#0A131A;
 	width: 100%;
 	margin: 0 auto;
 	text-align: right;
-	min-height: 12em;
+	border-top: 15px solid #1D1919;
 }
-.container, .bodycontainer, .footercontainer {
+.container {
 	margin:0 auto;
-	min-height:100%;
 	width:960px;
+	min-height: 6em;
+	border-bottom: 1px dotted #A5A5A5;
+}
+.bodycontainer {
+	position: relative;
+	margin:0 auto;
+	width:960px;
+	padding-bottom: 120px;
 }
 .menucontainer {
-	margin-left: 50px;  
+	margin-left: 60px;  
 	position: absolute; 
-	top: 61px; 
+	top: 15px; 
 	z-index: 1;
 }
 .menu{
-	margin:0 auto;
+	margin: auto;
 	padding:0;
-	height:60px;
+	height:10px;
 	width:100%;
 	display:block;
 	float: left;
@@ -44,9 +89,9 @@
 	float:left;
 	padding-left:15px;
 	display:block;
-	color:rgb(255,255,255);
+	color: #322B2B;
 	text-decoration:none;
-	font:14px KozGoPro-Light, sans-serif;
+	font:16px 'Lekton', Helvetica, sans-serif;
 	cursor:pointer;
 	outline:none;
 }
@@ -57,422 +102,110 @@
 	padding-right:15px;
 }
 .menu li a:hover{
-	background:url("/images/rollover.png");
+	background-color: #1D1919;
 	color:rgb(255,255,255);
 }
 .menu li a:hover span{
-	background:url("/images/rollover.png");
+	background-color: #1D1919;
 }
 .menu li a.active, .menu li a.active:hover{
 	line-height:60px;
-	font:14px KozGoPro-Light, sans-serif;
-	background:url("/images/rollover.png");
+	font:16px 'Lekton', Helvetica, sans-serif;
+	background-color: #1D1919;
 	color:rgb(255,255,255);
 }
 .menu li a.active span, .menu li a.active:hover span{
-	background:url("/images/rollover.png") 100% -90px no-repeat;
+	background-color: #1D1919;
 }
-.menuChrome{
-	margin:0 auto;
-	padding:0;
-	height:60px;
-	width:100%;
-	display:block;
-	float: left;
-}
-.menuChrome li{
-	padding:0;
-	margin:0;
-	list-style:none;
-	display:inline;
-}
-.menuChrome li a{
-	float:left;
-	padding-left:15px;
-	display:block;
-	color:rgb(255,255,255);
-	text-decoration:none;
-	font:14px KozGoPro-Light, sans-serif;
-	cursor:pointer;
-	outline:none;
-}
-.menuChrome li a span{
-	line-height:60px;
-	float:left;
-	display:block;
-	padding-right:15px;
-}
-.menuChrome li a:hover{
-	background:url("/images/rollover.png");
-	color:rgb(255,255,255);
-}
-.menuChrome li a:hover span{
-	background:url("/images/rollover.png");
-}
-.menuChrome li a.active, .menu li a.active:hover{
-	line-height:60px;
-	font:14px KozGoPro-Light, sans-serif;
-	background:url("/images/rollover.png");
-	color:rgb(255,255,255);
-}
-.menuChrome li a.active span, .menu li a.active:hover span{
-	background:url("/images/rollover.png") 100% -90px no-repeat;
-}
-.menuFirefox{
-	margin:0 auto;
-	padding:0;
-	height:60px;
-	width:100%;
-	display:block;
-	float: left;
-}
-.menuFirefox li{
-	padding:0;
-	margin:0;
-	list-style:none;
-	display:inline;
-}
-.menuFirefox li a{
-	float:left;
-	padding-left:15px;
-	display:block;
-	color:rgb(255,255,255);
-	text-decoration:none;
-	font:14px Helvetica, sans-serif;
-	cursor:pointer;
-	outline:none;
-}
-.menuFirefox li a span{
-	line-height:60px;
-	float:left;
-	display:block;
-	padding-right:15px;
-}
-.menuFirefox li a:hover{
-	background:url("/images/rollover.png");
-	color:rgb(255,255,255);
-}
-.menuFirefox li a:hover span{
-	background:url("/images/rollover.png");
-}
-.menuFirefox li a.active, .menu li a.active:hover{
-	line-height:60px;
-	font:14px Helvetica, sans-serif;
-	background:url("/images/rollover.png");
-	color:rgb(255,255,255);
-}
-.menuFirefox li a.active span, .menu li a.active:hover span{
-	background:url("/images/rollover.png") 100% -90px no-repeat;
-}
-.menuOpera{
-	margin:0 auto;
-	padding:0;
-	height:60px;
-	width:100%;
-	display:block;
-	float: left;
-}
-.menuOpera li{
-	padding:0;
-	margin:0;
-	list-style:none;
-	display:inline;
-}
-.menuOpera li a{
-	float:left;
-	padding-left:15px;
-	display:block;
-	color:rgb(255,255,255);
-	text-decoration:none;
-	font:14px Helvetica Neue Light, sans-serif;
-	cursor:pointer;
-	outline:none;
-}
-.menuOpera li a span{
-	line-height:60px;
-	float:left;
-	display:block;
-	padding-right:15px;
-}
-.menuOpera li a:hover{
-	background:url("/images/rollover.png");
-	color:rgb(255,255,255);
-}
-.menuOpera li a:hover span{
-	background:url("/images/rollover.png");
-}
-.menuOpera li a.active, .menuOpera li a.active:hover{
-	line-height:60px;
-	font:14px Helvetica Neue Light, sans-serif;
-	background:url("/images/rollover.png");
-	color:rgb(255,255,255);
-}
-.menuOpera li a.active span, .menuOpera li a.active:hover span{
-	background:url("/images/rollover.png") 100% -90px no-repeat;
-}
-.menuSafari{
-	margin:0 auto;
-	padding:0;
-	height:60px;
-	width:100%;
-	display:block;
-	float: left;
-}
-.menuSafari li{
-	padding:0;
-	margin:0;
-	list-style:none;
-	display:inline;
-}
-.menuSafari li a{
-	float:left;
-	padding-left:15px;
-	display:block;
-	color:rgb(255,255,255);
-	text-decoration:none;
-	font:14px KozGoPro-Light, sans-serif;
-	cursor:pointer;
-	outline:none;
-}
-.menuSafari li a span{
-	line-height:60px;
-	float:left;
-	display:block;
-	padding-right:15px;
-}
-.menuSafari li a:hover{
-	background:url("/images/rollover.png");
-	color:rgb(255,255,255);
-}
-.menuSafari li a:hover span{
-	background:url("/images/rollover.png");
-}
-.menuSafari li a.active, .menuSafari li a.active:hover{
-	line-height:60px;
-	font:14px KozGoPro-Light, sans-serif;
-	background:url("/images/rollover.png");
-	color:rgb(255,255,255);
-}
-.menuSafari li a.active span, .menuSafari li a.active:hover span {
-	background:url("/images/rollover.png") 100% -90px no-repeat;
-}
-.title{
+
+.title {
 	text-align: right;
-	font:4.65em KozGoPro-Light, sans-serif;
-	color: #FFFFFF;
+	padding-right: 60px;
+	font: 4.65em 'Philosopher', Helvetica, sans-serif;
+	color: #322B2B;
 	position: relative;
-	top: 20px;
-	right: 40px;
-	height: 236px;
+	top: 10px;
 }
-.title:hover{
+.title:hover {
 	text-align: right;
-	font:4.65em KozGoPro-Light, sans-serif;
-	color: #FFFFFF;
+	font: 4.65em 'Philosopher', Helvetica, sans-serif;
+	color: #CC6600;
 	position: relative;
-	top: 20px;
-	right: 40px;
+	top: 10px;
 	height: 236px;
 	text-decoration: none;
 }
 .subtitle{
-	font: .87em KozGoPro-Light, sans-serif;
-	color: #FFFFFF;
+	font:0.85em 'Raleway', Helvetica, sans-serif;
+	color: #322B2B;
 	position: relative;
-	bottom: 25px;
+	bottom: 5px;
 	text-align: right;
-	right: 42px;
-}
-.titleChrome {
-	text-align: right;
-	font:4.65em KozGoPro-Light, sans-serif;
-	color: #FFFFFF;
-	position: relative;
-	top: 20px;
-	right: 40px;
-	height: 236px;
-}
-.titleChrome:hover {
-	text-align: right;
-	font:4.65em KozGoPro-Light, sans-serif;
-	color: #FFFFFF;
-	position: relative;
-	top: 20px;
-	right: 40px;
-	height: 236px;
-	text-decoration: none;
-}
-.subtitleChrome{
-	font: .87em KozGoPro-Light, sans-serif;
-	color: #FFFFFF;
-	position: relative;
-	bottom: 25px;
-	text-align: right;
-	right: 42px;
-}
-.titleExplorer {
-	text-align: right;
-	font:4.65em Arial, sans-serif;
-	color: #FFFFFF;
-	position: relative;
-	top: 50px;
-	height: 236px;
-}
-.titleExplorer:hover {
-	text-align: right;
-	font:4.65em Arial, sans-serif;
-	color: #FFFFFF;
-	position: relative;
-	top: 50px;
-	height: 236px;
-	text-decoration: none;
-}
-.subtitleExplorer{
-	font: .87em Arial, sans-serif;
-	color: #FFFFFF;
-	position: relative;
-	top: 40px;
-	text-align: right;
-	right: 10px;
-}
-.titleFirefox {
-	text-align: right;
-	font:4.65em Helvetica, sans-serif;
-	color: #FFFFFF;
-	position: relative;
-	top: 50px;
-	height: 236px;
-}
-.titleFirefox:hover {
-	text-align: right;
-	font:4.65em Helvetica, sans-serif;
-	color: #FFFFFF;
-	position: relative;
-	top: 50px;
-	height: 236px;
-	text-decoration: none;
-}
-.subtitleFirefox{
-	font: .95em KozGoPro-Light, Helvetica Neue Light, Helvetica, sans-serif;
-	color: #FFFFFF;
-	position: relative;
-	top: 40px;
-	text-align: right;
-	right: 10px;
-}
-.titleOpera {
-	text-align: right;
-	font:4.65em Helvetica Neue Light, sans-serif;
-	color: #FFFFFF;
-	position: relative;
-	top: 45px;
-	height: 236px;
-}
-.titleOpera:hover {
-	text-align: right;
-	font:4.65em Helvetica Neue Light, sans-serif;
-	color: #FFFFFF;
-	position: relative;
-	top: 45px;
-	height: 236px;
-	text-decoration: none;
-}
-.subtitleOpera{
-	font: .97em Helvetica Neue Light, Helvetica, sans-serif;
-	color: #FFFFFF;
-	position: relative;
-	top: 35px;
-	text-align: right;
-	left: 2px;
-}
-.titleSafari {
-	text-align: right;
-	font:4.65em KozGoPro-Light, sans-serif;
-	color: #FFFFFF;
-	position: relative;
-	top: 20px;
-	right: 40px;
-	height: 236px;
-}
-.titleSafari:hover {
-	text-align: right;
-	font:4.65em KozGoPro-Light, sans-serif;
-	color: #FFFFFF;
-	position: relative;
-	top: 20px;
-	height: 236px;
-	text-decoration: none;
-}
-.subtitleSafari{
-	font: .87em KozGoPro-Light, sans-serif;
-	color: #FFFFFF;
-	position: relative;
-	bottom: 25px;
-	text-align: right;
-	right: 42px;
+	padding-right: 66px;
 }
 .slider{
-	height: 421px;
-	width: 719px;
-	position: relative;
-	top: 100px;
-	left: 120.5px;
+	width: 620px;
+	padding-top: 50px;
+	margin: auto;
 }
 .welcome{
-	text-align:left;
-	font: 3em Helvetica Neue Light, Helvetica, sans-serif;
+	font: 2.5em Helvetica, Arial, sans-serif;
 	color: #584D4D;
-	width:620px;
-	position: relative;
-	top: 30px;
-	left: 60px;
+	font-style: italic;
+	padding-top: 50px;
+	padding-right: 50px;
+	margin: 0 auto;
+	width: 620px;
 }
 .info{
-	text-align: left;
-	font: 1em Arial, Arial, Helvetica, sans-serif;
-	color: #584D4D;
 	width: 620px;
-	height: 152px;
+	margin: -40px auto;
+	padding-right: 50px;
+}
+.footer {
 	position: relative;
-	top: 30px;
-	left: 60px;
-}
-.footer{
-    margin-top: 22em;
-    padding: 0;
 	width: 100%;
-	display: block;
-	float: left;
+	margin-top: -80px;
+	height: 80px;
+	clear:both;
 }
-.footertext{
-	color: #584D4D;
+.footerwrap {
+	width: 960px;
+	margin: 0 auto;
+	min-height: 100%;
+	border-top: 1px dotted #322B2B;
+	border-bottom: 15px solid #1D1919;
+	font-size: 14px;
 }
 .footerlink{
+	text-align: center;
 	color: #584D4D;
-	font: 1em Arial, Helvetica, sans-serif;
+	font: 1em Lucida Grande, Arial, Helvetica, sans-serif;
 }
 .footerlink:hover{
 	color:#CC6600;
-	font: 1em Arial, Helvetica, sans-serif;
+	font: 1em Lucida Grande, Arial, Helvetica, sans-serif;
 	text-decoration: none
 }
 .personbox {
-  height: 271px;
-  width: 145px;
+  height: 187px;
+  width: 100px;
   margin: 10px;
 }
 .personbox:hover {
-  background-color: blue;
-  height: 281px;
-  width: 155px;
+  background-color: rgb(189, 201, 208);
+  height: 187px;
+  width: 100px;
+}
+.infobox {
+  float: left;
 }
 .publication {
   margin-top: 10px;
   margin-bottom: 10px;
-  padding-left: 3px;
+  margin-left: 0px;
   padding-top: 4px;
   padding-bottom: 4px;
-  border-left: 1px dotted black;
 }
 .publication a {
   color:#CC6600;
@@ -482,59 +215,130 @@
   width: 600px;
   margin-left: 200px;
 }
-.research
+.research, .internships
 {
   margin-bottom: 20px;
+  margin-left: 80px
 }
-.internships
+.internshipslist
 {
   margin-bottom: 20px;
+  margin-left: 110px;
 }
-.peoplenav {
-  border-left: 8px solid black;
-  font-size: 24px;
+.peoplenav, .researchnav, .internshipsnav {
+  font: 1em Arial, sans-serif;
+  color: #322B2B;
+  border-left: 4px solid #322B2B;
   list-style-type: none;
   padding-left: 10px;
+  line-height: 200%;
+  font-weight: bold;
 }
-.peoplenav a:hover {
-  text-decoration: none;
-  color:#CC6600;
+.peoplenav a:hover, researchnav a:hover, intershipsnav a:hover {
+  text-decoration: underline;
 }
-.peoplesubnav a {
-  font-size: 20px;
+.peoplesubnav a, .postionsubnav a {
+  font: 0.95em Arial, sans-serif;
   list-style-type: none;
-  color: gray;
+  color: #322B2B;
+  line-height: 200%;
+  font-weight: normal;
 }
-.peoplesubnav li {
-  padding-left: 30px;
+.peoplesubnav li, .positionsubnav li {
   list-style-type: none;
+}
+.peoplesubnav a:hover, .positionsubnav a:hover {
+  font: 0.95em Arial, sans-serif;
+  text-decoration: underline;
+  line-height: 200%;
 }
 .publicationsheader {
   border-bottom: 1px solid black;
   padding-left: 8px;
 }
-.internshipsnav {
-  border-left: 8px solid black;
-  font-size: 24px;
-  list-style-type: none;
-  padding-left: 10px;
-}
-.internshipsnav a:hover {
-  text-decoration: none;
-  color:#CC6600;
-}
-.researchnav {
-  border-left: 8px solid black;
-  font-size: 24px;
-  list-style-type: none;
-  padding-left: 10px;
-}
-.researchnav a:hover {
-  text-decoration: none;
-  color:#CC6600;
-}
 .nav {
-  float: right;
+  position: absolute;
+  top: 50px;
+  left: 650px;
   width: 300px;
-  margin-top: 100px;
 }
+.positionpage {
+	position: relative;
+	width: 550px;
+	margin-bottom: -100px;
+}
+.personname {
+	font: 125% Arial, sans-serif;
+	font-weight: bold;
+	color: #322B2B;
+}
+.personname:hover {
+	font: 125% Arial, sans-serif;
+	font-weight: bold;
+	text-decoration: underline;
+	color: #322B2B;
+}
+.personinfo {
+	position: relative;
+	bottom: 165px;
+	left: 150px;
+	width: 400px;
+} 
+.personimage {
+	position: relative;
+}
+.collaboratorsbox {
+	width: 620px;
+}
+.tooltip {
+	color: #322B2B; 
+	outline: none;
+	cursor: pointer; 
+	text-decoration: none;
+	position: relative;
+}
+.tooltip span {
+	margin-left: -999em;
+	position: absolute;
+	text-decoration: none;
+}
+.tooltip:hover span {
+	border-radius: 5px 5px; 
+	moz-border-radius: 5px; 
+	webkit-border-radius: 5px; 
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+	webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.1); 
+	moz-box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+	font: 0.85em Arial, sans-serif;
+	color: #322B2B;
+	text-decoration: none;
+	position: absolute; 
+	left: 10em; 
+	top: -2em; 
+	z-index: 99;
+	margin-left: 0; 
+	width: 270px;
+}
+/*.tooltip:hover em {
+	text-decoration: none;
+	font-family: Candara, Tahoma, Geneva, sans-serif; 
+	font-size: 1.2em; 
+	font-weight: bold;
+	display: block; 
+	padding: 0.2em 0 0.6em 0;
+}*/
+.classic { 
+	padding: 1em 0.5em; 
+	text-decoration: none;
+}
+.custom { 
+	padding: 0.5em 0.8em 0.8em 2em;
+}
+* html a:hover { 
+	background: transparent;
+}
+.classic {
+	background: #F1F1F1; 
+	border: 1px solid #322B2B; 
+}
+

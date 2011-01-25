@@ -1,0 +1,25 @@
+<div style="float: left;">
+  <h2 style="margin-top: 10px;">NCC Lab Alumni</h2>
+  
+  <% @alumni.each do |alumnus| %>
+    <% if alumnus.url.nil? %>
+      <p style="margin-bottom: 10px;"><%= alumnus.name %></p>
+    <% else %>
+      <p style="margin-bottom: 10px;"><a href="<%= alumnus.url %>" style="color: gray;"><%= alumnus.name %></a></p>
+    <% end %>
+  <% end%>
+</div>
+
+<div class="nav">
+  <ul class="peoplenav">
+    <li><a href="/people/">Current</a></li>
+    <ul class="peoplesubnav">
+      <li><a href="/people/directors">Directors</a></li>
+      <li><a href="/people/postdocs">Postdoctoral Fellows</a></li>
+      <li><a href="/people/students">Graduate Students</a></li>
+      <li><a href="/people/ras">Research Associates</a></li>
+    </ul>
+    <li><a href="/people/alumni">Alumni</a></li>
+    <li><a href="/people/collaborators">Collaborators</a></li>
+  </ul>
+</div>

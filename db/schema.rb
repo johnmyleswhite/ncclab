@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(:version => 20101214202029) do
     t.string   "image2"
     t.string   "url"
     t.string   "position"
+    t.string   "institution"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

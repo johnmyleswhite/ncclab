@@ -1,19 +1,33 @@
-<div style="float: left;">
+<div style="padding-left: 80px; padding-top: 50px;">
+  <h1>DIRECTORS</h1>
   <% @directors.each do |director| %>
-    <p><%= director.name %></p>
+   <div class="positionpage">
+    <div class="personimage">
+     <img src="<%= director.image2 %>" />
+    </div>
+    <div class="personinfo">
+     <a class="personname" href="<%= director.url %>" name="<%= director.name %>"><%= director.name %></a><br /><%= director.title %><br /><%= director.institution %>
+     <br />
+     <br />
+     <%= director.office %><br /><%= director.email %><br /><%= director.phone %>
+     <br />
+     <br />
+     <%= director.blurb %>
+    </div>
+   </div>
   <% end%>
 </div>
 
 <div class="nav">
   <ul class="peoplenav">
-    <li><a href="/people/">Current</a></li>
+    <li><a href="/people/">CURRENT</a></li>
     <ul class="peoplesubnav">
       <li><a href="/people/directors">Directors</a></li>
       <li><a href="/people/postdocs">Postdoctoral Fellows</a></li>
       <li><a href="/people/students">Graduate Students</a></li>
       <li><a href="/people/ras">Research Associates</a></li>
     </ul>
-    <li><a href="/people/alumni">Alumni</a></li>
-    <li><a href="/people/collaborators">Collaborators</a></li>
+    <li><a href="/people/alumni">ALUMNI</a></li>
+    <li><a href="/people/collaborators">COLLABORATORS</a></li>
   </ul>
 </div>
