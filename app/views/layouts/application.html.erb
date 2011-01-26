@@ -7,8 +7,8 @@
 	<link rel="stylesheet" type="text/css" href="/stylesheets/ncclab.css"/>
 	<link rel="stylesheet" type="text/css" href="/stylesheets/style.aw-showcase.css" />
 	<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Raleway:100'  />
-	<link rel='stylesheet' type='text/css'href='http://fonts.googleapis.com/css?family=Philosopher' />
-	<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Lekton' />
+	<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Philosopher' />
+	<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Rock+Salt' />
 	<script type="text/javascript" src="/javascripts/alumni.js"></script>
 	<script type="text/javascript" src="/javascripts/jquery-1.4.2.min.js"></script>
 	<script type="text/javascript" src="/javascripts/jquery.aw-showcase.min.js"></script>
@@ -21,7 +21,7 @@
 		width:					620,
 		height:					315,
 		auto:					true,
-		interval:				4000,
+		interval:				6000,
 		continuous:				true,
 		loading:				true,
 		arrows:					false,
@@ -32,7 +32,7 @@
 		pauseonover:			true,
 		transition:				'vslide', 
 		transition_speed:		500,
-		show_caption:			'onhover', 
+		show_caption:			'onload', 
 		thumbnails:				false,
 		thumbnails_position:	'outside-last', 
 		thumbnails_direction:	'horizontal', 
@@ -49,38 +49,38 @@
    <div class="menucontainer">
     <ul class="menu">
 	 <li>
-		<% if @controller.class.to_s == "ResearchController" %>
-			<a href="/research" class="active"><span>RESEARCH</span></a>
+		<% if controller.class.to_s == "ResearchController" %>
+			<a href="/research" class="active"><span>Research</span></a>
 	 	<% else %>
-	 		<a href="/research"><span>RESEARCH</span></a>
+	 		<a href="/research"><span>Research</span></a>
 	 	<% end %>
 	 </li>
 	 <li>
-		<% if @controller.class.to_s == "PeopleController" %>
-			<a href="/people" class="active"><span>PEOPLE</span></a>
+		<% if controller.class.to_s == "PeopleController" %>
+			<a href="/people" class="active"><span>People</span></a>
 	 	<% else %>
-	 		<a href="/people"><span>PEOPLE</span></a>
+	 		<a href="/people"><span>People</span></a>
 	 	<% end %>
 	 </li>
 	 <li>
-		<% if @controller.class.to_s == "PublicationsController" %>
-			<a href="/publications" class="active"><span>PUBLICATIONS</span></a>
+		<% if controller.class.to_s == "PublicationsController" %>
+			<a href="/publications" class="active"><span>Publications</span></a>
 	 	<% else %>
-	 		<a href="/publications"><span>PUBLICATIONS</span></a>
+	 		<a href="/publications"><span>Publications</span></a>
 	 	<% end %>
 	 </li>
 	 <li>
-		<% if @controller.class.to_s == "PositionsController" %>
-			<a href="/positions" class="active"><span>POSITIONS</span></a>
+		<% if controller.class.to_s == "PositionsController" %>
+			<a href="/positions" class="active"><span>Positions</span></a>
 	 	<% else %>
-	 		<a href="/positions"><span>POSITIONS</span></a>
+	 		<a href="/positions"><span>Positions</span></a>
 	 	<% end %>
 	 </li>
 	 <li>
-	 	<% if @controller.class.to_s == "ContactController" %>
-			<a href="/contact" class="active"><span>CONTACT</span></a>
+	 	<% if controller.class.to_s == "ContactController" %>
+			<a href="/contact" class="active"><span>Contact</span></a>
 		<% else %>
-			<a href="/contact"><span>CONTACT</span></a>
+			<a href="/contact"><span>Contact</span></a>
 		<% end %>
 	 </li>
 	</ul>
@@ -96,17 +96,19 @@
 
 <div class="footer">
  <div class="footerwrap">
+  <div class="footercontainer">
     <div style="float: left; padding-left: 10px; padding-top: 10px;">
     <a href="http://www.princeton.edu/main/" class="footerlink">Princeton University</a><br />
     <a href="http://www.princeton.edu/neuroscience/" class="footerlink">Princeton Neuroscience Institute</a><br />
     <a href="https://weblamp.princeton.edu/~psych/psychology/home/index.php" class="footerlink">Department of Psychology</a>
     </div>
-    <div style="float: left; padding-left: 70px; padding-top: 10px;">
+    <div style="float: left; padding-left: 95px; padding-top: 10px;">
     <br />
     <a href="/home" class="footerlink">Home</a> | <a href="/research" class="footerlink" >Research</a> | <a href="/people" class="footerlink" >People</a> | <a href="/publications" class="footerlink" >Publications</a> | <a href="/positions" class="footerlink" >Positions</a> | <a href="/contact" class="footerlink" >Contact</a>
     </div>
     <div style="float: right; padding-right: 10px; padding-top: 24px;">
     <span style="font:2.5em 'Raleway', Helvetica, sans-serif;">NCC LAB</span>
+    </div>
    </div>
   </div>
 </div>
