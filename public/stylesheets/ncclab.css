@@ -138,12 +138,11 @@ p {
 	text-decoration: none;
 }
 .subtitle{
-	font:0.85em 'Raleway', Helvetica, sans-serif;
+	font:0.80em 'Raleway', Helvetica, sans-serif;
 	color: #322B2B;
 	position: relative;
-	bottom: 5px;
 	text-align: right;
-	padding-right: 66px;
+	padding-right: 64px;
 }
 .slider{
 	width: 620px;
