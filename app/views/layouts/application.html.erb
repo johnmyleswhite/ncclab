@@ -49,35 +49,35 @@
    <div class="menucontainer">
     <ul class="menu">
 	 <li>
-		<% if @controller.class.to_s == "ResearchController" %>
+		<% if controller.class.to_s == "ResearchController" %>
 			<a href="/research" class="active"><span>RESEARCH</span></a>
 	 	<% else %>
 	 		<a href="/research"><span>RESEARCH</span></a>
 	 	<% end %>
 	 </li>
 	 <li>
-		<% if @controller.class.to_s == "PeopleController" %>
+		<% if controller.class.to_s == "PeopleController" %>
 			<a href="/people" class="active"><span>PEOPLE</span></a>
 	 	<% else %>
 	 		<a href="/people"><span>PEOPLE</span></a>
 	 	<% end %>
 	 </li>
 	 <li>
-		<% if @controller.class.to_s == "PublicationsController" %>
+		<% if controller.class.to_s == "PublicationsController" %>
 			<a href="/publications" class="active"><span>PUBLICATIONS</span></a>
 	 	<% else %>
 	 		<a href="/publications"><span>PUBLICATIONS</span></a>
 	 	<% end %>
 	 </li>
 	 <li>
-		<% if @controller.class.to_s == "PositionsController" %>
+		<% if controller.class.to_s == "PositionsController" %>
 			<a href="/positions" class="active"><span>POSITIONS</span></a>
 	 	<% else %>
 	 		<a href="/positions"><span>POSITIONS</span></a>
 	 	<% end %>
 	 </li>
 	 <li>
-	 	<% if @controller.class.to_s == "ContactController" %>
+	 	<% if controller.class.to_s == "ContactController" %>
 			<a href="/contact" class="active"><span>CONTACT</span></a>
 		<% else %>
 			<a href="/contact"><span>CONTACT</span></a>
