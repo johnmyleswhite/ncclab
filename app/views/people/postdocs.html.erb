@@ -7,7 +7,7 @@
     </div>
     <div class="personinfo">
      <% if postdoc.url.nil? %>
-      <a class="personname" style="text-decoration: none; cursor: text;" href="<%= postdoc.url %>" name="<%= postdoc.name %>"><%= postdoc.name %></a><br /><%= postdoc.title %><br /><%= postdoc.institution %><br />
+      <a class="personname" style="text-decoration: none; cursor: text;" name="<%= postdoc.name %>"><%= postdoc.name %></a><br /><%= postdoc.title %><br /><%= postdoc.institution %><br />
       <%= postdoc.office %><br /><%= postdoc.email %><br /><%= postdoc.phone %><br />
       <br/>
       <%= postdoc.blurb %>

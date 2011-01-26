@@ -2,8 +2,8 @@
 
 html, body {
 	height: 100%;
-	font: 100% Arial, sans-serif;
-	background: none repeat scroll 0 0 #F1F1F1;
+	font: 100% Book Antiqua, Arial, sans-serif;
+	background: none repeat scroll 0 0 #EDEBE7;
 	margin: 0; 
 	padding: 0;
 	text-align: left; 
@@ -11,19 +11,19 @@ html, body {
 	text-decoration: none;
 }
 h1  {
-	font: 200% Arial, sans-serif;
+	font: 200% Book Antiqua, Arial, sans-serif;
 	font-weight: bold;
 	color: #322B2B;
 	margin-bottom: 20px;
 }
 h2 {
-	font: 150% Arial, sans-serif;
+	font: 150% Book Antiqua, Arial, sans-serif;
 	font-weight: bold;
 	color: #322B2B;
 	padding-left: 80px
 }
 h3 {
-	font: 125% Arial, sans-serif;
+	font: 125% Book Antiqua, Arial, sans-serif;
 	font-weight: bold;
 	color: #584D4D;
 	margin-bottom: -10px;
@@ -36,16 +36,16 @@ a:hover {
 	text-decoration: underline;
 }
 p {
-	font: 100% Arial, sans-serif;
+	font: 100% Book Antiqua, Arial, sans-serif;
 	color: #584D4D;
 	margin-left: 80px;
 	margin-top: -15px;
 }
 .wrap { 
-	width: 960px;
-	margin: 0 auto;
+	width: 100%;
+	/*margin: 0 auto;*/
 	min-height: 100%;
-	background: none repeat scroll 0 0 #F1F1F1;
+	background: none repeat scroll 0 0 #EDEBE7;
 }
 .header {
 	width: 100%;
@@ -57,7 +57,7 @@ p {
 	margin:0 auto;
 	width:960px;
 	min-height: 6em;
-	border-bottom: 1px dotted #A5A5A5;
+	/*border-bottom: 1px dotted #A5A5A5;*/
 }
 .bodycontainer {
 	position: relative;
@@ -91,7 +91,8 @@ p {
 	display:block;
 	color: #322B2B;
 	text-decoration:none;
-	font:16px 'Lekton', Helvetica, sans-serif;
+	font: 19px Book Antiqua, serif;
+	font-style: italic;
 	cursor:pointer;
 	outline:none;
 }
@@ -103,19 +104,20 @@ p {
 }
 .menu li a:hover{
 	background-color: #1D1919;
-	color:rgb(255,255,255);
+	color: rgb(255,255,255);
 }
 .menu li a:hover span{
 	background-color: #1D1919;
 }
 .menu li a.active, .menu li a.active:hover{
 	line-height:60px;
-	font:16px 'Lekton', Helvetica, sans-serif;
+	font: 19px Book Antiqua, serif;
 	background-color: #1D1919;
-	color:rgb(255,255,255);
+	color: rgb(255,255,255);
 }
 .menu li a.active span, .menu li a.active:hover span{
 	background-color: #1D1919;
+	font-style: italic;
 }
 
 .title {
@@ -149,9 +151,8 @@ p {
 	margin: auto;
 }
 .welcome{
-	font: 2.5em Helvetica, Arial, sans-serif;
+	font: 2.5em Bookman Antiqua, serif;
 	color: #584D4D;
-	font-style: italic;
 	padding-top: 50px;
 	padding-right: 50px;
 	margin: 0 auto;
@@ -170,21 +171,25 @@ p {
 	clear:both;
 }
 .footerwrap {
+	width: 100%;
+	min-height: 100%;
+	border-bottom: 15px solid #1D1919;
+}
+.footercontainer {
+	position: relative;
 	width: 960px;
 	margin: 0 auto;
-	min-height: 100%;
-	border-top: 1px dotted #322B2B;
-	border-bottom: 15px solid #1D1919;
 	font-size: 14px;
+	border-top: 1px dotted #322B2B;
 }
 .footerlink{
 	text-align: center;
 	color: #584D4D;
-	font: 1em Lucida Grande, Arial, Helvetica, sans-serif;
+	font: 1em Book Antiqua, Lucida Grande, Arial, Helvetica, sans-serif;
 }
 .footerlink:hover{
 	color:#CC6600;
-	font: 1em Lucida Grande, Arial, Helvetica, sans-serif;
+	font: 1em Book Antiqua, Lucida Grande, Arial, Helvetica, sans-serif;
 	text-decoration: none
 }
 .personbox {
@@ -193,7 +198,7 @@ p {
   margin: 10px;
 }
 .personbox:hover {
-  background-color: rgb(189, 201, 208);
+  background-color: rgb(215, 150, 91);
   height: 187px;
   width: 100px;
 }
@@ -226,7 +231,7 @@ p {
   margin-left: 110px;
 }
 .peoplenav, .researchnav, .internshipsnav {
-  font: 1em Arial, sans-serif;
+  font: 1em Book Antiqua, Arial, sans-serif;
   color: #322B2B;
   border-left: 4px solid #322B2B;
   list-style-type: none;
@@ -238,7 +243,7 @@ p {
   text-decoration: underline;
 }
 .peoplesubnav a, .postionsubnav a {
-  font: 0.95em Arial, sans-serif;
+  font: 0.95em Book Antiqua, Arial, sans-serif;
   list-style-type: none;
   color: #322B2B;
   line-height: 200%;
@@ -248,7 +253,7 @@ p {
   list-style-type: none;
 }
 .peoplesubnav a:hover, .positionsubnav a:hover {
-  font: 0.95em Arial, sans-serif;
+  font: 0.95em Book Antiqua, Arial, sans-serif;
   text-decoration: underline;
   line-height: 200%;
 }
@@ -268,12 +273,12 @@ p {
 	margin-bottom: -100px;
 }
 .personname {
-	font: 125% Arial, sans-serif;
+	font: 125% Book Antiqua, Arial, sans-serif;
 	font-weight: bold;
 	color: #322B2B;
 }
 .personname:hover {
-	font: 125% Arial, sans-serif;
+	font: 125% Book Antiqua, Arial, sans-serif;
 	font-weight: bold;
 	text-decoration: underline;
 	color: #322B2B;
@@ -309,7 +314,7 @@ p {
 	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 	webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.1); 
 	moz-box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
-	font: 0.85em Arial, sans-serif;
+	font: 0.85em Book Antiqua, Arial, sans-serif;
 	color: #322B2B;
 	text-decoration: none;
 	position: absolute; 
@@ -338,7 +343,7 @@ p {
 	background: transparent;
 }
 .classic {
-	background: #F1F1F1; 
-	border: 1px solid #322B2B; 
+	background: #EDEBE7; 
+	border: 2px solid #322B2B; 
 }
 

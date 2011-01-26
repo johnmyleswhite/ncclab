@@ -39,7 +39,7 @@ button::-moz-focus-inner {
 
 .sliderbody
 {
-	background-color: #F1F1F1;
+	background-color: #EDEBE7;
 	color: #fff;
 	font-family: Century Gothic, Arial;
 	font-size: 12px;
@@ -50,12 +50,12 @@ button::-moz-focus-inner {
 
 .sliderheader
 {
-	font: 2.5em 'Lekton', Arial, sans-serif;
+	font: 2.5em Book Antiqua, serif;
 	margin-bottom: 5px;
 }
 .captionheader
 {
-	font: 3em Helvetica, Arial, sans-serif;
+	font: 1em Book Antiqua, serif;
 	color: #FFFFFF;
 	padding-top: 150px;
 	text-decoration: none;
@@ -131,7 +131,7 @@ button::-moz-focus-inner {
 	.showcase-content
 	{
 		text-align: center;
-		background-color: #F1F1F1;;
+		background-color: #EDEBE7;
 	}
 		
 		.showcase-plus-anchor
@@ -157,17 +157,32 @@ button::-moz-focus-inner {
 		.showcase-caption
 		{
 	color: #000;
-	padding-top: 15px;
+	padding-top: 22px;
 	text-align: center;
 	position: absolute;
-	top: 0px;
-	bottom: 0px;
-	left: 0px;
-	right: 0px;
+	top: 170px;
+	bottom: 70px;
+	left: 85px;
+	right: 415px;
 	display: none;
-	background-image: url('/images/black-opacity-60.png');
+	background-image: url('/images/normal.png');
 	font-size: 18px;
 		}
+		.showcase-caption:hover
+		{
+	color: #000;
+	padding-top: 22px;
+	text-align: center;
+	position: absolute;
+	top: 170px;
+	bottom: 70px;
+	left: 85px;
+	right: 415px;
+	display: none;
+	background-image: url('/images/hover.png');
+	font-size: 18px;
+		}
+	
 	
 	/* Button Wrapper */
 	.showcase-button-wrapper
@@ -228,7 +243,7 @@ button::-moz-focus-inner {
 			
 			.showcase-thumbnail-cover
 			{
-				background-image: url('/images/black-opacity-40.png');
+				/*background-image: url('/images/black-opacity-40.png');*/
 				position: absolute;
 				top: 0; bottom: 0; left: 0; right: 0;
 			}
