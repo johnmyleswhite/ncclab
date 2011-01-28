@@ -2,7 +2,7 @@
 
 html, body {
 	height: 100%;
-	font: 100% Book Antiqua, Arial, sans-serif;
+	font: 100% Book Antiqua, "Palatino Linotype", Palatino, serif;
 	background: none repeat scroll 0 0 #EDEBE7;
 	margin: 0; 
 	padding: 0;
@@ -11,19 +11,19 @@ html, body {
 	text-decoration: none;
 }
 h1  {
-	font: 200% Book Antiqua, Arial, sans-serif;
+	font: 200% Book Antiqua, "Palatino Linotype", Palatino, serif;
 	font-weight: bold;
 	color: #322B2B;
 	margin-bottom: 20px;
 }
 h2 {
-	font: 150% Book Antiqua, Arial, sans-serif;
+	font: 150% Book Antiqua, "Palatino Linotype", Palatino, serif;
 	font-weight: bold;
 	color: #322B2B;
-	padding-left: 80px
+	margin: 0px;
 }
 h3 {
-	font: 125% Book Antiqua, Arial, sans-serif;
+	font: 125% Book Antiqua, "Palatino Linotype", Palatino, serif;;
 	font-weight: bold;
 	color: #584D4D;
 	margin-bottom: -10px;
@@ -36,14 +36,12 @@ a:hover {
 	text-decoration: underline;
 }
 p {
-	font: 100% Book Antiqua, Arial, sans-serif;
+	font: 100% Book Antiqua, "Palatino Linotype", Palatino, serif;
 	color: #584D4D;
-	margin-left: 80px;
-	margin-top: -15px;
+	margin-top: 0px;
 }
 .wrap { 
 	width: 100%;
-	/*margin: 0 auto;*/
 	min-height: 100%;
 	background: none repeat scroll 0 0 #EDEBE7;
 }
@@ -57,7 +55,7 @@ p {
 	margin:0 auto;
 	width:960px;
 	min-height: 6em;
-	/*border-bottom: 1px dotted #A5A5A5;*/
+	position: relative;
 }
 .bodycontainer {
 	position: relative;
@@ -66,10 +64,9 @@ p {
 	padding-bottom: 120px;
 }
 .menucontainer {
-	margin-left: 60px;  
-	position: absolute; 
-	top: 15px; 
-	z-index: 1;
+	left: 60px;
+	width: 525px;
+	position: absolute;
 }
 .menu{
 	margin: auto;
@@ -77,7 +74,6 @@ p {
 	height:10px;
 	width:100%;
 	display:block;
-	float: left;
 }
 .menu li{
 	padding:0;
@@ -91,7 +87,7 @@ p {
 	display:block;
 	color: #322B2B;
 	text-decoration:none;
-	font: 19px Book Antiqua, serif;
+	font: 19px Book Antiqua, "Palatino Linotype", Palatino, serif;
 	font-style: italic;
 	cursor:pointer;
 	outline:none;
@@ -111,7 +107,7 @@ p {
 }
 .menu li a.active, .menu li a.active:hover{
 	line-height:60px;
-	font: 19px Book Antiqua, serif;
+	font: 19px Book Antiqua, "Palatino Linotype", Palatino, serif;
 	background-color: #1D1919;
 	color: rgb(255,255,255);
 }
@@ -120,47 +116,43 @@ p {
 	font-style: italic;
 }
 
+.titlebox {
+	position: absolute;
+	margin-top: 5px;
+	right: 60px;
+}
 .title {
-	text-align: right;
-	padding-right: 60px;
-	font: 4.65em 'Philosopher', Helvetica, sans-serif;
+	font: 4.5em Book Antiqua, "Palatino Linotype", Palatino, serif;
 	color: #322B2B;
-	position: relative;
-	top: 10px;
 }
 .title:hover {
-	text-align: right;
-	font: 4.65em 'Philosopher', Helvetica, sans-serif;
+	font: 4.5em Book Antiqua, "Palatino Linotype", Palatino, serif;
 	color: #CC6600;
-	position: relative;
-	top: 10px;
-	height: 236px;
 	text-decoration: none;
 }
 .subtitle{
-	font:0.80em 'Raleway', Helvetica, sans-serif;
+	font: 0.95em "Raleway", Book Antiqua, "Palatino Linotype", Palatino, serif;
 	color: #322B2B;
-	position: relative;
-	text-align: right;
-	padding-right: 64px;
+	position: absolute;
+	top: 80px;
+	right: 60px;
 }
 .slider{
 	width: 620px;
 	padding-top: 50px;
 	margin: auto;
 }
-.welcome{
-	font: 2.5em Bookman Antiqua, serif;
-	color: #584D4D;
-	padding-top: 50px;
-	padding-right: 50px;
-	margin: 0 auto;
+.welcomebox {
+	margin: 40px auto 0px auto;
 	width: 620px;
 }
-.info{
+.welcome {
+	font: 2em "Rock Salt", Book Antiqua, "Palatino Linotype", Palatino, serif;
+	color: #584D4D;
+}
+.welcomeinfobox{
+	margin: 0px auto 50px auto;
 	width: 620px;
-	margin: -40px auto;
-	padding-right: 50px;
 }
 .footer {
 	position: relative;
@@ -184,17 +176,17 @@ p {
 .footerlink{
 	text-align: center;
 	color: #584D4D;
-	font: 1em Book Antiqua, Lucida Grande, Arial, Helvetica, sans-serif;
+	font: 1em Book Antiqua, "Palatino Linotype", Palatino, serif;
 }
 .footerlink:hover{
 	color:#CC6600;
-	font: 1em Book Antiqua, Lucida Grande, Arial, Helvetica, sans-serif;
+	font: 1em Book Antiqua, "Palatino Linotype", Palatino, serif;
 	text-decoration: none
 }
 .personbox {
   height: 187px;
   width: 100px;
-  margin: 10px;
+  margin-bottom: 10px;
 }
 .personbox:hover {
   background-color: rgb(215, 150, 91);
@@ -219,40 +211,37 @@ p {
   width: 600px;
   margin-left: 200px;
 }
-.research, .internships
-{
-  margin-bottom: 20px;
-  margin-left: 80px
-}
 .internshipslist
 {
   margin-bottom: 20px;
-  margin-left: 110px;
+  margin-left: 10px;
+  list-style: square;
 }
-.peoplenav, .researchnav, .internshipsnav {
-  font: 1em Book Antiqua, Arial, sans-serif;
+.sidenav {
+  font: 1em Book Antiqua, "Palatino Linotype", Palatino, serif;
   color: #322B2B;
   border-left: 4px solid #322B2B;
   list-style-type: none;
   padding-left: 10px;
   line-height: 200%;
   font-weight: bold;
+  width: 300px;
 }
-.peoplenav a:hover, researchnav a:hover, intershipsnav a:hover {
+.sidenav a:hover {
   text-decoration: underline;
 }
-.peoplesubnav a, .postionsubnav a {
-  font: 0.95em Book Antiqua, Arial, sans-serif;
+.sidesubnav a {
+  font: 0.95em Book Antiqua, "Palatino Linotype", Palatino, serif;
   list-style-type: none;
   color: #322B2B;
   line-height: 200%;
   font-weight: normal;
 }
-.peoplesubnav li, .positionsubnav li {
+.sidesubnav li {
   list-style-type: none;
 }
-.peoplesubnav a:hover, .positionsubnav a:hover {
-  font: 0.95em Book Antiqua, Arial, sans-serif;
+sidesubnav a:hover {
+  font: 0.95em Book Antiqua, "Palatino Linotype", Palatino, serif;
   text-decoration: underline;
   line-height: 200%;
 }
@@ -272,12 +261,12 @@ p {
 	margin-bottom: -100px;
 }
 .personname {
-	font: 125% Book Antiqua, Arial, sans-serif;
+	font: 125% Book Antiqua, "Palatino Linotype", Palatino, serif;
 	font-weight: bold;
 	color: #322B2B;
 }
 .personname:hover {
-	font: 125% Book Antiqua, Arial, sans-serif;
+	font: 125% Book Antiqua, "Palatino Linotype", Palatino, serif;
 	font-weight: bold;
 	text-decoration: underline;
 	color: #322B2B;
@@ -313,7 +302,7 @@ p {
 	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 	webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.1); 
 	moz-box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
-	font: 0.85em Book Antiqua, Arial, sans-serif;
+	font: 0.85em Book Antiqua, "Palatino Linotype", Palatino, serif;
 	color: #322B2B;
 	text-decoration: none;
 	position: absolute; 
@@ -323,14 +312,6 @@ p {
 	margin-left: 0; 
 	width: 270px;
 }
-/*.tooltip:hover em {
-	text-decoration: none;
-	font-family: Candara, Tahoma, Geneva, sans-serif; 
-	font-size: 1.2em; 
-	font-weight: bold;
-	display: block; 
-	padding: 0.2em 0 0.6em 0;
-}*/
 .classic { 
 	padding: 1em 0.5em; 
 	text-decoration: none;

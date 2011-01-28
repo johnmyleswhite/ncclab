@@ -2,11 +2,11 @@
   <h1 style="padding-left: 80px; padding-top: 50px;">NCC LAB ALUMNI</h1>
   
   <% @alumni.each do |alumnus| %>
-   <div>
+   <div style="margin-left: 80px;">
      <% if alumnus.url.nil? %>
-      <p style="padding-top: 10px; color: #322B2B"><a class="tooltip" style="font-weight: bold; text-decoration: none; cursor: text;" rel="#"><%= alumnus.name %><span class="classic"><b><%= alumnus.title %></b><br /><%= alumnus.office %><br /><%= alumnus.email %><br /><b><%= alumnus.phone %></b><br /><%= alumnus.blurb %><br /><%= alumnus.image %></span></a><br /><%= alumnus.image %></p>
+      <p><a class="tooltip" style="font-weight: bold; text-decoration: none; cursor: text;" rel="#"><%= alumnus.name %><span class="classic"><b><%= alumnus.title %></b><br /><%= alumnus.office %><br /><%= alumnus.email %><br /><b><%= alumnus.phone %></b><br /><%= alumnus.blurb %><br /><%= alumnus.image %></span></a><br /><%= alumnus.image %></p>
      <% else %>
-      <p style="padding-top: 10px; color: #322B2B"><a class="tooltip" style="font-weight: bold;" href="<%= alumnus.url %>" rel="#"><%= alumnus.name %><span class="classic"><b><%= alumnus.title %></b><br /><%= alumnus.office %><br /><%= alumnus.email %><br /><b><%= alumnus.phone %></b><br /><%= alumnus.blurb %><br /><%= alumnus.image %></span></a><br /><%= alumnus.image %></p>
+      <p><a class="tooltip" style="font-weight: bold;" href="<%= alumnus.url %>" rel="#"><%= alumnus.name %><span class="classic"><b><%= alumnus.title %></b><br /><%= alumnus.office %><br /><%= alumnus.email %><br /><b><%= alumnus.phone %></b><br /><%= alumnus.blurb %><br /><%= alumnus.image %></span></a><br /><%= alumnus.image %></p>
   	 <% end%>
    </div>
   <% end%>
@@ -15,9 +15,9 @@
 </div>
 
 <div class="nav" style="margin-top: -21px;">
-  <ul class="peoplenav">
+  <ul class="sidenav">
     <li><a href="/people/">CURRENT</a></li>
-    <ul class="peoplesubnav">
+    <ul class="sidesubnav">
       <li><a href="/people/directors">Directors</a></li>
       <li><a href="/people/postdocs">Postdoctoral Fellows</a></li>
       <li><a href="/people/students">Graduate Students</a></li>

@@ -7,7 +7,7 @@
     </div>
     <div class="personinfo">
      <% if student.url.nil? %>
-      <a class="personname" style="text-decoration: none; cursor: text; name="<%= student.name %>"><%= student.name %></a><br /><%= student.title %><br /><%= student.institution %><br />
+      <a class="personname" style="text-decoration: none; cursor: text;" name="<%= student.name %>"><%= student.name %></a><br /><%= student.title %><br /><%= student.institution %><br />
       <%= student.office %><br /><%= student.email %><br /><%= student.phone %><br />
       <br />
       <%= student.blurb %>
@@ -23,9 +23,9 @@
 </div>
 
 <div class="nav">
-  <ul class="peoplenav">
+  <ul class="sidenav">
     <li><a href="/people/">CURRENT</a></li>
-    <ul class="peoplesubnav">
+    <ul class="sidesubnav">
       <li><a href="/people/directors">Directors</a></li>
       <li><a href="/people/postdocs">Postdoctoral Fellows</a></li>
       <li><a href="/people/students">Graduate Students</a></li>

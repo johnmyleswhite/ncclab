@@ -1,12 +1,12 @@
 <div style="padding-left: 80px; padding-top: 30px;">
    <table border="0" class="peopletable">
     <tr>
-     <h2 style="margin-left: -80px; margin-bottom: -10px;">Directors</h2>
+     <h2>Directors</h2>
     </tr>
     <tr>
      <% @directors.each do |director| %>
      <td>
-      <div class="personbox" style="margin-left: -10px;">
+      <div class="personbox">
       <a href="/people/directors#<%= director.name %>"><img src="<%= director.image %>" /></a>
      </td>
      <% end%>
@@ -15,12 +15,12 @@
    
    <table>
     <tr>
-     <h2 style="margin-left: -80px; margin-top: -10px; margin-bottom: -10px;">Postdoctoral Fellows</h2>
+     <h2 style="margin-top: -10px;">Postdoctoral Fellows</h2>
     </tr>
     <tr>
      <% @postdocs.each do |postdoc| %>
      <td>
-      <div class="personbox" style="margin-left: -10px;">
+      <div class="personbox">
       <a href="/people/postdocs#<%= postdoc.name %>"><img src="<%= postdoc.image %>" /></a>
       </div>
      </td>
@@ -30,12 +30,12 @@
    
    <table>
     <tr>
-     <h2 style="margin-left: -80px; margin-top: -10px; margin-bottom: -10px;">Graduate Students</h2>
+     <h2 style="margin-top: -10px;">Graduate Students</h2>
     </tr>  
     <tr>
      <% @students.each do |student| %>
      <td>
-      <div class="personbox" style="margin-left: -10px;">
+      <div class="personbox">
       <a href="/people/students#<%= student.name %>"><img src="<%= student.image %>" /></a>
       </div>
      </td>
@@ -45,12 +45,12 @@
    
    <table>
     <tr>
-     <h2 style="margin-left: -80px; margin-top: -10px; margin-bottom: -10px;">Research Assistants</h2>
+     <h2 style="margin-top: -10px;">Research Assistants</h2>
     </tr> 
     <tr>
      <% @ras.each do |ra| %>
      <td>
-      <div class="personbox" style="margin-left: -10px;">
+      <div class="personbox">
       <a href="/people/ras#<%= ra.name %>"><img src="<%= ra.image %>" /></a>
       </div>
      </td>
@@ -60,9 +60,9 @@
  </div>
 
 <div class="nav">
-  <ul class="peoplenav">
+  <ul class="sidenav">
     <li><a href="/people/">CURRENT</a></li>
-    <ul class="peoplesubnav">
+    <ul class="sidesubnav">
       <li><a href="/people/directors">Directors</a></li>
       <li><a href="/people/postdocs">Postdoctoral Fellows</a></li>
       <li><a href="/people/students">Graduate Students</a></li>
