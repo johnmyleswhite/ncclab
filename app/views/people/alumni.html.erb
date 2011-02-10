@@ -1,8 +1,8 @@
-<div style="position: relative; width: 620px;">
-  <h1 style="padding-left: 80px; padding-top: 50px;">NCC LAB ALUMNI</h1>
+<div style="width: 550px; margin-left: 80px; padding-top: 50px;">
+  <h1>NCC LAB ALUMNI</h1>
   
   <% @alumni.each do |alumnus| %>
-   <div style="margin-left: 80px;">
+   <div>
      <% if alumnus.url.nil? %>
       <p><a class="tooltip" style="font-weight: bold; text-decoration: none; cursor: text;" rel="#"><%= alumnus.name %><span class="classic"><b><%= alumnus.title %></b><br /><%= alumnus.office %><br /><%= alumnus.email %><br /><b><%= alumnus.phone %></b><br /><%= alumnus.blurb %><br /><%= alumnus.image %></span></a><br /><%= alumnus.image %></p>
      <% else %>
@@ -14,7 +14,7 @@
 <div style="padding-bottom: 25px;">
 </div>
 
-<div class="nav" style="margin-top: -21px;">
+<div class="nav">
   <ul class="sidenav">
     <li><a href="/people/">CURRENT</a></li>
     <ul class="sidesubnav">

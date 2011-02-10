@@ -131,7 +131,7 @@ p {
 	text-decoration: none;
 }
 .subtitle{
-	font: 0.95em "Raleway", Book Antiqua, "Palatino Linotype", Palatino, serif;
+	font: 0.8em "Raleway", Book Antiqua, "Palatino Linotype", Palatino, serif;
 	color: #322B2B;
 	position: absolute;
 	top: 80px;
@@ -279,9 +279,6 @@ sidesubnav a:hover {
 } 
 .personimage {
 	position: relative;
-}
-.collaboratorsbox {
-	width: 620px;
 }
 .tooltip {
 	color: #322B2B; 

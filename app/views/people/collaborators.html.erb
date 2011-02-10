@@ -1,20 +1,18 @@
-<div class="collaboratorsbox">
-  <h1 style="padding-left: 80px; padding-top: 50px;">NCC LAB COLLABORATORS</h1>
+<div style="width: 550px; padding-left: 80px; padding-top: 50px;">
+  <h1>NCC LAB COLLABORATORS</h1>
   
   <% @collaborators.each do |collaborator| %>
-    <p style="margin-top: 10px; margin-left: 80px; margin-bottom: 10px;">
       <% if collaborator.url.nil? %>
         <%= collaborator.name %><br />
       <% else %>
         <a href="<%= collaborator.url %>" style="color: #322B2B; font-weight: bold;"><%= collaborator.name %></a><br />
       <% end %>
-      <span style="color: #322B2B; width: 550px;"><%= collaborator.institution %></span><br />
-      <span style="color: #322B2B; width: 550px;"><%= collaborator.blurb %></span>
-    </p>
+      <p><%= collaborator.institution %><br />
+      <%= collaborator.blurb %></p>
   <% end%>
 </div>
 
-<div class="nav" style="margin-top: -21px;">
+<div class="nav">
   <ul class="sidenav">
     <li><a href="/people/">CURRENT</a></li>
     <ul class="sidesubnav">
