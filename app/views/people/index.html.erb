@@ -17,35 +17,43 @@
     <tr>
      <h2 style="margin-top: -10px;">Postdoctoral Fellows</h2>
     </tr>
-    <tr>
-     <% @postdocs.each do |postdoc| %>
-     <td>
-      <div class="personbox">
-      <a href="/people/postdocs#<%= postdoc.name %>"><img src="<%= postdoc.image %>" /></a>
-      </div>
-     </td>
+     <% @postdocs.each_with_index do |postdoc, index| %>
+       <% if index % 5 == 0 %>
+        <tr>
+       <% end %>
+       <td>
+         <div class="personbox">
+          <a href="/people/postdocs#<%= postdoc.name %>"><img src="<%= postdoc.image %>" /></a>
+        </div>
+       </td>
+       <% if index % 5 == 4 or index == @postdocs.length - 1%>
+         </tr>
+       <% end %>
      <% end %>
-    </tr>
    </table>
    
    <table>
     <tr>
      <h2 style="margin-top: -10px;">Graduate Students</h2>
     </tr>  
-    <tr>
-     <% @students.each do |student| %>
-     <td>
-      <div class="personbox">
-      <a href="/people/students#<%= student.name %>"><img src="<%= student.image %>" /></a>
-      </div>
-     </td>
+     <% @students.each_with_index do |student, index| %>
+       <% if index % 5 == 0 %>
+         <tr>
+       <% end %>
+       <td>
+       <div class="personbox">
+        <a href="/people/students#<%= student.name %>"><img src="<%= student.image %>" /></a>
+       </div>
+       </td>
+       <% if index % 5 == 4 or index == @students.length - 1%>
+         </tr>
+       <% end %>
      <% end %>
-    </tr>
    </table>
    
    <table>
     <tr>
-     <h2 style="margin-top: -10px;">Research Assistants</h2>
+     <h2 style="margin-top: -10px;">Research Associates</h2>
     </tr> 
     <tr>
      <% @ras.each do |ra| %>

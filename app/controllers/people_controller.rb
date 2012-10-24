@@ -15,7 +15,7 @@ class PeopleController < ApplicationController
     @postdocs.sort! {|a, b| a.last_name.upcase <=> b.last_name.upcase}
     @students = Person.find(:all, :conditions => {:position => 'Graduate Student'})
     @students.sort! {|a, b| a.last_name.upcase <=> b.last_name.upcase}
-    @ras = Person.find(:all, :conditions => {:position => 'Research Assistant'})
+    @ras = Person.find(:all, :conditions => {:position => 'Research Associate'})
     @ras.sort! {|a, b| a.last_name.upcase <=> b.last_name.upcase}
    
     respond_to do |format|
@@ -74,7 +74,7 @@ class PeopleController < ApplicationController
   # GET /people/ras
   # GET /people/ras.xml  
   def ras
-    @ras = Person.find(:all, :conditions => {:position => 'Research Assistant'})
+    @ras = Person.find(:all, :conditions => {:position => 'Research Associate'})
     @ras.sort! {|a, b| a.last_name.upcase <=> b.last_name.upcase}
     
     respond_to do |format|
